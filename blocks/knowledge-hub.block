@@ -1,0 +1,31 @@
+<div class="knowledge-hub-block">
+	<squarespace:query collection="blog" limit="6">
+		<ol class="blog-list">
+		{.repeated section items}
+			<li class="blog-item">
+			{title}
+			</li>
+		{.end}
+		</ol>
+	</squarespace:query>
+
+	<squarespace:query collection="case-study" limit="6">
+		<ol class="case-study-list">
+		{.repeated section items}
+			<li class="case-study-item">
+			{title}
+			</li>
+		{.end}
+		</ol>
+	</squarespace:query>
+
+	<squarespace:query collection="video" limit="6">
+		<ol class="video-list">
+		{.repeated section items}
+			<li class="video-item">
+				{title}
+			</li>
+		{.end}
+		</ol>
+	</squarespace:query>
+</div>
