@@ -3,7 +3,8 @@
 		<ol class="blog-list">
 		{.repeated section items}
 			<li class="blog-item">
-			{title}
+				<h1>{title}</h1>
+				<img src="{main-image}" />
 			</li>
 		{.end}
 		</ol>
@@ -13,7 +14,8 @@
 		<ol class="case-study-list">
 		{.repeated section items}
 			<li class="case-study-item">
-			{title}
+				<h1>{title}</h1>
+				<img src="{main-image}" />
 			</li>
 		{.end}
 		</ol>
@@ -23,7 +25,8 @@
 		<ol class="video-list">
 		{.repeated section items}
 			<li class="video-item">
-				{title}
+				<h1>{title}</h1>
+				<img src="{main-image}" />
 			</li>
 		{.end}
 		</ol>
