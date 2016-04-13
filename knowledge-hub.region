@@ -5,7 +5,7 @@
 			<li class="blog-item">
 				<a href="{fullUrl}">
 					<h1>{title}</h1>
-					<img src="{thumbnail}" />
+					<img src="{assetUrl}" />
 				</a>
 			</li>
 		{.end}
@@ -18,7 +18,7 @@
 			<li class="case-study-item">
 				<a href="{fullUrl}">
 					<h1>{title}</h1>
-					<img src="{thumbnail}" />
+					<img src="{assetUrl}" />
 				</a>
 			</li>
 		{.end}
@@ -31,7 +31,7 @@
 			<li class="video-item">
 				<a href="{fullUrl}">
 					<h1>{title}</h1>
-					<img src="{thumbnail}" />
+					<img src="{assetUrl}" />
 				</a>
 			</li>
 		{.end}
