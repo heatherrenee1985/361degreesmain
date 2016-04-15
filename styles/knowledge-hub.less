@@ -1,4 +1,16 @@
+@media (max-width: 36em) {
+	.knowledge-hub-block {
+		> ol {
+			> li {
+				width: 100%;
+				float: none;
+			}
+		}
+	}
+}
+
 .knowledge-hub-block {
+	margin: 2em 0;
 	> .blog-list {
 		> li {
 		}
@@ -19,14 +31,18 @@
 			position: relative;
 			width: 33.33%;
 			float: left;
-			height: 8em;
+			height: 12em;
 			overflow: hidden;
+			background: #000;
 			&:hover {
 				h1 {
 					bottom: 5%;
 					top: auto;
 					opacity: 1;
 					color: white;
+				}
+				img {
+					opacity: 7;
 				}
 			}
 			h1 {
@@ -44,6 +60,7 @@
 			}
 			img {
 				width: 100%;
+				margin: auto;
 			}
 			> a {
 				display: block;
