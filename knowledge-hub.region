@@ -1,4 +1,6 @@
 <div class="knowledge-hub-block">
+	<h1>The Knowledge Hub</h1>
+	
 	<squarespace:query collection="blog" limit="6">
 		<ol class="blog-list">
 		{.repeated section items}
