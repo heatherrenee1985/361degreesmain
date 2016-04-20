@@ -5,7 +5,3 @@
 {.or}
 No page
 {.end}
-
-<script>
-document.getElementById('thumbnail').getElementsByTagName('img')[0].style.visibility = "hidden";
-</script>
