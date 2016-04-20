@@ -6,3 +6,5 @@ document.getElementById('thumbnail').getElementsByTagName('img')[0].style.visibi
 	{structuredContent.oembed.html}
 </div>
 {.end}
+
+{items[0]|json-pretty}
