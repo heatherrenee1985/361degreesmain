@@ -1,10 +1,11 @@
 <script>
 document.getElementById('thumbnail').getElementsByTagName('img')[0].style.visibility = "hidden";
 </script>
+
 {.repeated section items}
 <div class="video-item">
 	{structuredContent.oembed.html}
 </div>
+{.or}
+no items found here
 {.end}
-
-{items|json-pretty}
