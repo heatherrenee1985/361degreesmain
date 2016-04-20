@@ -1,11 +1,11 @@
-<script>
-document.getElementById('thumbnail').getElementsByTagName('img')[0].style.visibility = "hidden";
-</script>
-
-{.repeated section items}
+{.section item}
 <div class="video-item">
 	{structuredContent.oembed.html}
 </div>
 {.or}
-no items found here
+No page
 {.end}
+
+<script>
+document.getElementById('thumbnail').getElementsByTagName('img')[0].style.visibility = "hidden";
+</script>
