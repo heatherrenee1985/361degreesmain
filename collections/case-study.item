@@ -1,3 +1,6 @@
-<div>
-case study item code
+{.section item}
+<div class="case-study-item">
+	<h1>{title}</h1>
+	{body}
 </div>
+{.end}

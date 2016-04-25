@@ -2,6 +2,4 @@
 <div class="video-item">
 	{structuredContent.oembed.html}
 </div>
-{.or}
-No page
 {.end}
