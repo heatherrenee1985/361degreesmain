@@ -20,6 +20,17 @@
     <squarespace:script src="sticky.js" combo="true" />
     {.if authenticatedAccount}<squarespace:script src="authenticated.js" combo="false" />{.end}
     {squarespace-footers}
-
+    <script type="text/javascript">
+      (function() {
+          var path = '//easy.myfonts.net/v2/js?sid=10140(font-family=Univers+65+Bold)&sid=211226(font-family=Univers+Pro+65+Bold)&sid=218105(font-family=Univers+Pro+45+Light)&sid=218106(font-family=Univers+Pro+55+Roman)&key=AwH7mVJHgF',
+              protocol = ('https:' == document.location.protocol ? 'https:' : 'http:'),
+              trial = document.createElement('script');
+          trial.type = 'text/javascript';
+          trial.async = true;
+          trial.src = protocol + path;
+          var head = document.getElementsByTagName("head")[0];
+          head.appendChild(trial);
+      })();
+    </script>
   </body>
 </html>
