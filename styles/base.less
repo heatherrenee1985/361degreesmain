@@ -385,6 +385,11 @@ blockquote {
     position: relative;
     z-index: 1000;
   }
+  
+  &.sticky {
+    position: fixed !important;
+    background-color: fade(@headerBgColor, 100%) !important;
+  }
 }
 
 .header-inner,
