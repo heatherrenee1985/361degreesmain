@@ -88,7 +88,7 @@
 
 {.if pagination}
   <div class="knowledge-hub-block">
-   <h2> Keep Reading </h2>
+   <h2> Further your knowledge </h2>
     <squarespace:query collection="blog" limit="3">
       <ol class="blog-list">
       {.repeated section items}
