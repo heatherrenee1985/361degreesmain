@@ -25,6 +25,9 @@
   {.end}
   {.end}
 </main>
+<div id="related_content">
+  <squarespace:block-field id="relatedBlock" columns="12" label="Related Content" />
+</div>
 <div id="new_block">
     <squarespace:block-field id="extraBlock1" columns="4" label="Block 1" />
     <squarespace:block-field id="extraBlock2" columns="4" label="Block 2" />
