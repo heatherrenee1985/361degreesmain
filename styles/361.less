@@ -43,7 +43,9 @@ body.collection-type-video {
     display: block;
   }
   .sqs-block-summary-v2 .summary-item:hover {
-    background-color: #BBBBBB;
+    .summary-content {
+			opacity: 1;
+		}
   }
   .sqs-block-summary-v2 .summary-item:hover:before {
     content: ' ';
@@ -66,9 +68,13 @@ body.collection-type-video {
     border-bottom-color: white;
   }
   .sqs-block-summary-v2 .summary-content {
+    text-align: center;
+    height: 100%;
     text-align: left;
     height: 100%;
-    position: relative;
+    position: absolute;
+    top: 0;
+    opacity: 0;
   }
   .sqs-block-summary-v2 .summary-metadata-item {
     font-size: 11px;
