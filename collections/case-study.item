@@ -3,3 +3,7 @@
 		{body}
 	</div>
 {.end}
+<div class="full-form green">
+	<h2 style="padding-top: 50px;">Find out more</h2>
+	<div class="typeform-widget" data-url="https://361degrees.typeform.com/to/w7dVZk" data-text="Contact Form" style="width:100%;height:500px;"></div>
+</div>		
