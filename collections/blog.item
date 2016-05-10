@@ -83,5 +83,21 @@
   --><div class="older">{.if pagination.nextItem}<span class="next-label">Older Post</span><a href="{pagination.nextItem.fullUrl}" rel="next"><span>{pagination.nextItem.title}</span></a>{.end}</div>
   </nav>
   {.end}
-
+  
+  {.if pagination}
+  <div class="knowledge-hub-block">
+    <squarespace:query collection="case-study" limit="3">
+      <ol class="case-study-list">
+      {.repeated section items}
+        <li class="case-study-item">
+          <a href="{fullUrl}">
+            <h1>{title}</h1>
+            <div class="background" style="background-image:url({assetUrl})"></div>
+          </a>
+        </li>
+      {.end}
+      </ol>
+    </squarespace:query>
+  </div>
+  {.end}
 </div>
