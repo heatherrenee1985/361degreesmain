@@ -1,5 +1,5 @@
-@textWidth: 1100px;
-
+@textWidth: 800px;
+@sitePadding: 32px;
 
 #block-yui_3_17_2_1_1460456234362_55577.gallery-block {
   img {
@@ -28,7 +28,12 @@ body.collection-type-video {
 }
 
 #page.case-study {
-
+	padding: @sitepadding 0;
+	
+	.sqs-block {
+		padding: 0 @sitepadding;
+	}
+	
 	.sqs-block-html {
 		max-width: @textWidth;
 		margin: 0 auto;
