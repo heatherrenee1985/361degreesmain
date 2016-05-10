@@ -234,12 +234,17 @@
     }
     #page #content {
       width: 100%;
-      max-width: @pageWidthNarrow;
+      max-width: @pageWidth;
       display: block;
       margin: 0 auto;
+      
+      .blog-item {
+        max-width: @pageWidthNarrow;
+        margin: 0 auto;
+      }
     }
     &.view-list .filter-heading {
-      max-width: @pageWidthNarrow;
+      max-width: @pageWidth;
       padding-left: 0;
     }
   }

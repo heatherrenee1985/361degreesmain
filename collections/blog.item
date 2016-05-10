@@ -84,7 +84,9 @@
   </nav>
   {.end}
   
-  {.if pagination}
+</div>
+
+{.if pagination}
   <div class="knowledge-hub-block">
     <squarespace:query collection="case-study" limit="3">
       <ol class="case-study-list">
@@ -99,5 +101,4 @@
       </ol>
     </squarespace:query>
   </div>
-  {.end}
-</div>
+{.end}
