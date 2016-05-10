@@ -19,8 +19,8 @@
     <div id="siteWrapper" class="clearfix">
 
       <div class="sqs-cart-dropzone"></div>
-
-      <header id="header" class="show-on-scroll" data-offset-el="#page" data-offset-behavior="top" role="banner">
+      <div id="sticky-anchor"></div>
+      <header id="header" role="banner">
         <div class="header-inner">
           {.section website}<div id="{.if logoImageUrl}logoWrapper{.or}siteTitleWrapper{.end}" class="wrapper" data-content-field="site-title">
             {.section logoImageUrl}
