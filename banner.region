@@ -41,7 +41,12 @@
             <div class="color-overlay"></div>
             <figure id="thumbnail" class="loading content-fill"><img {@|image-meta} /></figure>
             {.end}
-            {.if description}<div class="desc-wrapper" data-collection-id="{id}">{description}</div>{.end}
+            {.if description}
+              <div class="desc-wrapper" data-collection-id="{id}">
+                <h1>{title}</h1>
+                {description}
+              </div>
+            {.end}
           </div>
           {.end}
         {.end}
