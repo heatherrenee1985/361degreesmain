@@ -9,6 +9,7 @@
 @pageWidth: 1800px;
 @pageWidthNarrow: 700px;
 @galleryHeight: 600px;
+@color361: #c1d72e;
 
 
 // Mixins
@@ -1447,7 +1448,7 @@ body:not(.collection-type-gallery).banner-button-corner-style-pill {
   text-align: left;
   overflow: auto;
   visibility: hidden;
-  background-color: fade(@headerBgColor, 100%);
+  background-color: @color361;
   .font-smoothing(@headerBgColor);
   .border-box;
   .transition2(height 0s 0.14s linear, visibility 0s 0.14s linear);
