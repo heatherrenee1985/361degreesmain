@@ -377,6 +377,8 @@ blockquote {
   line-height: 1em;
   background-color: fade(@headerBgColor, 100%);
   .font-smoothing(@headerBgColor);
+  .transition(all 0.6s ease);
+  
   position: relative;
   a {
     text-decoration: none;
@@ -389,6 +391,10 @@ blockquote {
   &.sticky {
     position: fixed !important;
     background-color: fade(@headerBgColor, 100%) !important;
+    
+    a {
+      color: black;
+    }
   }
 }
 
