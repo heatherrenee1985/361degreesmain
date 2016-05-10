@@ -1,5 +1,4 @@
       <div id="preFooter">
-       <h2>using template!!!!</h2>
         <div class="pre-footer-inner">
           <squarespace:block-field id="preFooterBlocks" columns="12" label="Pre-Footer Content" />
         </div>
