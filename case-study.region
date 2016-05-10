@@ -1,4 +1,4 @@
-<main id="page" class="case-study" role="main">
+<main id="page" role="main">
   {.section collection}
   {.collectionTypeNameEquals? products}{.section categories}<div id="categoryNav">
     <input type="checkbox" name="category-nav-toggle" id="categoryNavToggle" class="category-nav-toggle hidden" />
