@@ -2,6 +2,10 @@
      // Get this value outside of the scroll listener.
      // That way the browser doesn't have to recalculate a million times.
      var anchorY = Y.one('#sticky-anchor').getY();
+     
+     if (anchorY < window.scrollY) {
+            Y.one('#header').addClass('sticky');
+     }
  
      Y.on('scroll', function() {
         if (anchorY < window.scrollY) {
