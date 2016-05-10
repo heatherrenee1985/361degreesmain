@@ -16,7 +16,6 @@
             <figure id="thumbnail" class="loading content-fill"><img {@|image-meta} /></figure>
             <div class="blog-item-wrapper">
               <div class="title-desc-wrapper">
-                <time class="dt-published published post-date" datetime="{addedOn|date %F}" pubdate>{addedOn|date %B %e, %Y}</time>
                 <div class="post-category">{.section categories}{.repeated section @}<a href="{collection.fullUrl}?category={@|url-encode}">{@}</a>{.alternates with}, {.end}{.end}</div>
                 <div class="post-author"><a href="{collection.fullUrl}?author={author.id}">{.section author}{displayName}{.end}</a></div>
                 {.section title}<div class="post-title">{@}</div>{.end}
