@@ -13,11 +13,33 @@ body.sqs-edit-mode .sqs-layout.sqs-editing {
 	width: 100% !important;
 }
 
+
+// OVERRIDE CLIENT LOGOS ISSUES
 #block-yui_3_17_2_1_1460456234362_55577.gallery-block {
   img {
     max-width: 300px;
     height: auto;
   }
+}
+
+#content {
+	h2 {
+		text-align: center;
+    font-family: "omnes-pro";
+    font-size: 2em;
+    margin: 30px auto;
+    font-weight: 500;
+		
+		&:after {
+			content: '';
+			height: 3px;
+			width: 50%;
+			border-bottom: 3px solid @color361;
+			position: absolute;
+			bottom: 0;
+			left: 25%;
+		}
+	}
 }
 
 body.collection-type-video {
