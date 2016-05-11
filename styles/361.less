@@ -21,13 +21,21 @@ body.sqs-edit-mode .sqs-layout.sqs-editing {
   }
 }
 
-//LIST STYLES
+// LIST STYLES
 ul {
-    list-style-image: url('/assets/bullet2.png');
+    //list-style-image: url('/assets/bullet2.png');
 }
 
+// BUTTON STYLES
+a.btn {
+	display: block;
+	background-color: @color361;
+	color: #181818;
+	padding: 6px 12px;
+	margin: 0 auto;
+}
 
-//CONTENT STYLES
+// CONTENT STYLES
 
 #content {
 	h2 {
@@ -113,6 +121,7 @@ body.collection-type-video {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	flex-direction: column;
 	
 	.summary-title {
 		font-size: 24px;
