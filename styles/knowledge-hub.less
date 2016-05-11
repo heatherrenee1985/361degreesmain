@@ -29,6 +29,7 @@
 			height: 12em;
 			overflow: hidden;
 			background: #000;
+			min-height: 300px;
 			&:hover {
 				h1 {
 					top: 50%;
@@ -62,6 +63,7 @@
 				bottom: 0;
 				left: 0;
 				right: 0;
+				opacity: .7;
 				background-size: cover;
 				background-position: center center;
 			}
@@ -90,12 +92,31 @@
 	}
 }
 
+@media (min-width: 40em) and (max-width: 70em){
+	.knowledge-hub-block {
+		> ol {
+			> li {
+				width: 50%;
+			}
+		}
+	}
+}
+
 @media (max-width: 40em) {
 	.knowledge-hub-block {
 		> ol {
 			> li {
 				width: 100%;
 				float: none;
+				
+					h1 {
+						top: 50%;
+						padding-top: 0;
+						opacity: 1;
+					}
+					img, .background {
+						opacity: .7;
+					}
 			}
 		}
 	}

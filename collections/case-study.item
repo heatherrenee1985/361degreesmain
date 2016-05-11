@@ -1,6 +1,5 @@
 {.section item}
-<div class="case-study-item">
-	<h1>{title}</h1>
-	{body}
-</div>
+	<div class="case-study-item">
+		{body}
+	</div>
 {.end}
