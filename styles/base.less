@@ -1151,11 +1151,19 @@ body:not(.collection-type-gallery).banner-button-corner-style-pill {
     }
   }
   .subnav{
-    background-color: fade(@headerBgColor, 100%);
+    background-color: transparent;
   }
 
 }
 
+#header.sticky {
+  #headerNav nav,
+  #sidecarNav nav {
+    .subnav{
+      background-color: @color361;
+    }
+  }
+}
 
 
 
