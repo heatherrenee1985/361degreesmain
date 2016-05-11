@@ -122,6 +122,13 @@ Y.use('node', function (Y) {
 			this.showIndexNavOnScroll();
 			this.disableHoverOnScroll();
 
+			var body = Y.one('body');
+			if(body.hasClass('collection-type-blog') || body.hasClass('collection-type-case-study')) {
+				var blogItem = Y.one('.blog-item');
+				blogItem.addClass('preview').on('click', function(){
+					blogItem.removeClass('preview')
+				})
+			}
 		},
 
 		syncUI: function () {
