@@ -13,7 +13,6 @@ body.sqs-edit-mode .sqs-layout.sqs-editing {
 	width: 100% !important;
 }
 
-
 // OVERRIDE CLIENT LOGOS ISSUES
 #block-yui_3_17_2_1_1460456234362_55577.gallery-block {
   img {
@@ -21,6 +20,15 @@ body.sqs-edit-mode .sqs-layout.sqs-editing {
     height: auto;
   }
 }
+
+//LIST STYLES
+ul {
+    list-style-image: url('/assets/bullet.png');
+		list-style-position: inside;
+}
+
+
+//CONTENT STYLES
 
 #content {
 	h2 {
@@ -43,7 +51,7 @@ body.sqs-edit-mode .sqs-layout.sqs-editing {
 	}
 	
 	.sqs-block-html {
-		max-width: 900px;
+		max-width: @textWidth;
 		margin: 0 auto;
 	}
 }
