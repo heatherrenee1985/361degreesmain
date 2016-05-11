@@ -10,10 +10,10 @@
      Y.on('scroll', function() {
         if (anchorY < window.scrollY) {
             Y.one('#header').addClass('sticky');
-            Y.one('#logoImage img').src = '/assets/logo_green.png';
+            Y.one('#logoImage img').setAttribute('src', '/assets/logo_green.png');
         } else {
             Y.one('#header').removeClass('sticky');
-            Y.one('#logoImage img').src = '/assets/logo_white.png';
+            Y.one('#logoImage img').setAttribute('src', '/assets/logo_white.png');
         }
      });
  
