@@ -27,7 +27,7 @@
         <a href="{fullUrl}" class="u-url" rel="bookmark">{title}</a>
       {.end}
       </h1>
-      <div class="meta-below-title {.section categories}{.or}no-categories{.end}">
+      <!-- <div class="meta-below-title {.section categories}{.or}no-categories{.end}">
         {.section author}
         <div class="entry-byline">
           <span class="entry-author"><a href="{collection.fullUrl}?author={author.id}" class="p-author author entry-byline-link" rel="author">{displayName}</a></span>
@@ -42,7 +42,7 @@
           <span class="entry-category">{.repeated section @}<a href="{collection.fullUrl}?category={@|url-encode}" class="entry-morefrom-link" rel="tag">{@}</a>{.alternates with}, {.end}</span>
         </div>
         {.end}
-      </div>
+      </div> -->
     </header>
 
     <div class="entry-content e-content">
