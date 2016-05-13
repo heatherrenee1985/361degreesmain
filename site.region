@@ -56,6 +56,7 @@
                       <div class="post-category">{.section categories}{.repeated section @}<a href="{collection.fullUrl}?category={@|url-encode}">{@}</a>{.alternates with}, {.end}{.end}</div>
                       <div class="post-author"><a href="{collection.fullUrl}?author={author.id}">{.section author}{displayName}{.end}</a></div>
                       {.section title}<div class="post-title">{@}</div>{.end}
+                      {.section excerpt}<p>{@}</p>{.end}
                     </div>
                   </div>
                 </div>

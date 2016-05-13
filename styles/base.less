@@ -395,16 +395,29 @@ blockquote {
     background-color: rgba(255,255,255,.95) !important;
     
     a {
-      color: #181818 !important;
+      color: #959ba1 !important;
+      .transition(all ease 0.6s);
+      
+      &:hover {
+        color: #181818 !important;
+      }
     }
     
     .folder {
       label {
-        color: #181818 !important;
+        color: #959ba1 !important;
+        .transition(all ease 0.6s);
+        &:hover {
+          color: #181818 !important;
+        }
       }
       .subnav {
         a {
-          color: #181818 !important;
+          color: #959ba1 !important;
+          .transition(all ease 0.6s);
+          &:hover {
+            color: #181818 !important;
+          }
         }
       }
     }
@@ -971,7 +984,7 @@ li.filter {
   overflow: hidden;
   min-height: 0;
   width: 100%;
-  padding: 180px 0 155px;
+  padding: 180px 0;
 }
 
 .view-list .banner-thumbnail-wrapper,

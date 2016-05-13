@@ -13,7 +13,7 @@
 		</ol>
 	</squarespace:query>
 
-	<squarespace:query collection="case-study" limit="6">
+	<squarespace:query collection="case-studies" limit="6">
 		<ol class="case-study-list">
 		{.repeated section items}
 			<li class="case-study-item">
