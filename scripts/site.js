@@ -142,13 +142,12 @@ Y.use('node', function (Y) {
 						var cats = item._node.getAttribute('data-categories') || "";
 						// assuming only one each, must fix for multi-cats
 						Y.each(cats.split(','), function(cat){
-							if(categories.indexOf(cat) == -1) {
+							if(categories.indexOf(cat) == -1 && cat.length) {
 								categories.push(cat);
 							}
 						});
 					});
 				});
-				console.log(categories);
 				Y.each(categories, function(category){
 					var li = document.createElement('li'),
 						a = document.createElement('a');
@@ -156,9 +155,7 @@ Y.use('node', function (Y) {
 					a.href = '#category:' + category;
 					a.addEventListener('click', function(event){
 						event.preventDefault();
-						console.log(category);
 						lists.each(function(list){
-							console.log(list);
 							list.all('li').each(function(item){
 								var cats = item._node.getAttribute('data-categories').split(','),
 									visible = cats.indexOf(category) != -1;
