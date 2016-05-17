@@ -152,7 +152,7 @@ Y.use('node', function (Y) {
 					var li = Y.Node.create('<li><a></a></li>'),
 						a = li.one('a');
 					a.setHTML(category);
-					a.set('class', 'filter-link');
+					a.addClass('filter-link');
 					a.set('href', '#category:' + category);
 					a.on('click', function(event){
 						event.preventDefault();
@@ -166,7 +166,6 @@ Y.use('node', function (Y) {
 						Y.all('.filter-link').removeClass('active');
 						a.addClass('active');
 					});
-					li.appendChild(a);
 					categoryList.append(li);
 				})
 			}
