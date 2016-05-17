@@ -152,6 +152,7 @@ Y.use('node', function (Y) {
 					var li = document.createElement('li'),
 						a = document.createElement('a');
 					a.textContent = category;
+					a.className = 'filter-link';
 					a.href = '#category:' + category;
 					a.addEventListener('click', function(event){
 						event.preventDefault();
@@ -161,7 +162,9 @@ Y.use('node', function (Y) {
 									visible = cats.indexOf(category) != -1;
 								item[ visible ? 'show' : 'hide' ]();
 							})
-						})
+						});
+						Y.all('.filter-link').removeClass('active');
+						Y(a).addClass('active');
 					});
 					li.appendChild(a);
 					categoryList.append(li);
