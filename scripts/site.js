@@ -162,6 +162,7 @@ Y.use('node', function (Y) {
 							list.all('li').each(function(item){
 								var cats = item._node.getAttribute('data-categories').split(','),
 									hide = cats.indexOf(category) == -1;
+								console.log(cats);
 								item.hidden = hide;
 							})
 						})
