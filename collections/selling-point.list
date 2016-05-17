@@ -1,0 +1,9 @@
+<div class="selling-points">
+		<ol class="selling-point-list">
+      {.repeated section items}
+        <li class="selling-point-item" id="selling-point-{id}" data-item-id="{id}">
+          {body}
+        </li>
+      {.end}
+		</ol>
+</div>

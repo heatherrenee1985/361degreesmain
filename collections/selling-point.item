@@ -1,0 +1,5 @@
+{.section item}
+	<div class="selling-point-item">
+		{body}
+	</div>
+{.end}
