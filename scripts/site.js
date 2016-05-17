@@ -149,12 +149,12 @@ Y.use('node', function (Y) {
 					});
 				});
 				Y.each(categories, function(category){
-					var li = document.createElement('li'),
-						a = document.createElement('a');
-					a.textContent = category;
-					a.className = 'filter-link';
-					a.href = '#category:' + category;
-					a.addEventListener('click', function(event){
+					var li = Y.Node.create('<li><a></a></li>'),
+						a = li.one('a');
+					a.setHTML(category);
+					a.set('class', 'filter-link');
+					a.set('href', '#category:' + category);
+					a.on('click', function(event){
 						event.preventDefault();
 						lists.each(function(list){
 							list.all('li').each(function(item){
@@ -164,7 +164,7 @@ Y.use('node', function (Y) {
 							})
 						});
 						Y.all('.filter-link').removeClass('active');
-						Y(a).addClass('active');
+						a.addClass('active');
 					});
 					li.appendChild(a);
 					categoryList.append(li);
