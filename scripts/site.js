@@ -156,11 +156,13 @@ Y.use('node', function (Y) {
 					a.href = '#category:' + category;
 					a.addEventListener('click', function(event){
 						event.preventDefault();
+						console.log(category);
 						lists.each(function(list){
+							console.log(list);
 							list.all('li').each(function(item){
 								var cats = item._node.getAttribute('data-categories').split(','),
-									show = cats.indexOf(category) != -1;
-								item.hidden = !show;
+									hide = cats.indexOf(category) == -1;
+								item.hidden = hide;
 							})
 						})
 					});
