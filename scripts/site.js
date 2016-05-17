@@ -152,7 +152,6 @@ Y.use('node', function (Y) {
 				Y.each(categories, function(category){
 					var li = document.createElement('li'),
 						a = document.createElement('a');
-					li.appendChild(a);
 					a.textContent = category;
 					a.href = '#category:' + category;
 					a.addEventListener('click', function(event){
@@ -164,7 +163,8 @@ Y.use('node', function (Y) {
 								item.hidden = !show;
 							})
 						})
-					})
+					});
+					li.appendChild(a);
 					categoryList.append(li);
 				})
 			}
