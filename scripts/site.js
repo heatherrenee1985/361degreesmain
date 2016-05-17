@@ -131,6 +131,22 @@ Y.use('node', function (Y) {
 					})
 				}
 			}
+
+			var knowledgeHub = Y.one('.knowledge-hub-block');
+			if(knowledgeHub) {
+				var categories = [],
+					lists = knowledgeHub.one('ol.blog-list, ol.case-study-list, ol.video-list');
+				lists.each(function(list){
+					list.all('li').each(function(item){
+						var cats = item._node.getAttribute('data-categories') || "";
+						// assuming only one each, must fix for multi-cats
+						if(categories.indexOf(cats) == -1) {
+							categories.push(cats);
+						}
+					});
+				});
+				console.log(categories);
+			}
 		},
 
 		syncUI: function () {
