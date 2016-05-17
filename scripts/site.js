@@ -135,17 +135,38 @@ Y.use('node', function (Y) {
 			var knowledgeHub = Y.one('.knowledge-hub-block');
 			if(knowledgeHub) {
 				var categories = [],
+					categoryList = knowledgeHub.one('ol.category-filter'),
 					lists = knowledgeHub.all('ol.blog-list, ol.case-study-list, ol.video-list');
 				lists.each(function(list){
 					list.all('li').each(function(item){
 						var cats = item._node.getAttribute('data-categories') || "";
 						// assuming only one each, must fix for multi-cats
-						if(categories.indexOf(cats) == -1) {
-							categories.push(cats);
-						}
+						Y.each(cats.split(','), function(cat){
+							if(categories.indexOf(cat) == -1) {
+								categories.push(cat);
+							}
+						});
 					});
 				});
 				console.log(categories);
+				Y.each(categories, function(category){
+					var li = document.createElement('li'),
+						a = document.createElement('a');
+					li.appendChild(a);
+					a.textContent = category;
+					a.href = '#category:' + category;
+					a.addEventListener('click', function(event){
+						event.preventDefault();
+						lists.each(function(list){
+							list.all('li').each(function(item){
+								var cats = item._node.getAttribute('data-categories').split(','),
+									show = cats.indexOf(category) != -1;
+								item.hidden = !show;
+							})
+						})
+					})
+					categoryList.append(li);
+				})
 			}
 		},
 

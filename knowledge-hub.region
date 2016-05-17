@@ -1,5 +1,8 @@
 <div class="knowledge-hub-block">
 	
+	<ol class="category-filter">
+	</ol>
+
 	<squarespace:query collection="blog" limit="6">
 		<ol class="blog-list">
 		{.repeated section items}
