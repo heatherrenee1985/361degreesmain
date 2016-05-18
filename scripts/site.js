@@ -139,7 +139,7 @@ Y.use('node', function (Y) {
 					lists = knowledgeHub.all('ol.blog-list, ol.case-study-list, ol.video-list');
 				lists.each(function(list){
 					list.all('li').each(function(item){
-						var cats = item._node.getAttribute('data-categories') || "";
+						var cats = item.getAttribute('data-categories') || "";
 						// assuming only one each, must fix for multi-cats
 						Y.each(cats.split(','), function(cat){
 							if(categories.indexOf(cat) == -1 && cat.length) {
@@ -156,11 +156,16 @@ Y.use('node', function (Y) {
 					a.set('href', '#category:' + category);
 					a.on('click', function(event){
 						event.preventDefault();
+						if(a.hasClass('active')) {
+							a.removeClass('active');
+							lists.each(function(list){
+								list.all('li').show();
+							});
+							return;
+						}
 						lists.each(function(list){
 							list.all('li').each(function(item){
-								var cats = item._node.getAttribute('data-categories').split(','),
-									visible = cats.indexOf(category) != -1;
-								item[ visible ? 'show' : 'hide' ]();
+								item[ item.getAttribute('data-categories').split(',').indexOf(category) == -1 ? 'hide' : 'show' ]();
 							})
 						});
 						Y.all('.filter-link').removeClass('active');
