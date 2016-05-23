@@ -59,7 +59,7 @@ a.btn {
 
 // QUOTE STYLES
 
-blockquote {
+blockquote, .quote-block blockquote, .sqs-block-quote blockquote {
 	margin: 20px 0;
 	padding: .5em 2.5em;
 	font-style: italic;
@@ -68,9 +68,10 @@ blockquote {
 	font-size: 25px;
 	line-height: 1.4em;
 	quotes: "\201C""\201D""\2018""\2019";
+	border-left-width: 10px;
 }
 
-blockquote::before {
+blockquote::before, .quote-block blockquote::before, .sqs-block-quote blockquote::before {
   color: @color361;
   content: "\201C";
   font-size: 4em;
@@ -78,7 +79,7 @@ blockquote::before {
   margin-right: 0.25em;
   vertical-align: -0.4em;
 }
-blockquote::after {
+blockquote::after, .quote-block blockquote::after, .sqs-block-quote  blockquote::after {
   color: @color361;
   content: "\201D";
   font-size: 4em;
