@@ -63,7 +63,6 @@ blockquote, .quote-block blockquote, .sqs-block-quote blockquote {
 	margin: 20px auto;
 	padding: .5em 2.5em;
 	font-style: normal;
-	border-left: 10px solid @color361;
 	font-weight: 500;
 	font-size: 25px;
 	line-height: 1.4em;
@@ -77,6 +76,12 @@ blockquote, .quote-block blockquote, .sqs-block-quote blockquote {
 
 .quote-block blockquote, .sqs-block-quote blockquote {
 	padding: 0 !important;
+}
+
+.quote-block, .sqs-block-quote {
+	.source {
+		font-family: "omnes-pro";
+	}
 }
 
 blockquote::before, .quote-block blockquote::before, .sqs-block-quote blockquote::before {
