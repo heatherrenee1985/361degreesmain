@@ -112,8 +112,11 @@ blockquote::after, .quote-block blockquote::after, .sqs-block-quote  blockquote:
 		border-left: none;
 	}
 	
-	h2:after {
-		border-bottom: none !important;
+	h2 {
+		margin-bottom: 5px !important;
+		&:after {
+			border-bottom: none !important;
+		}
 	}
 	
 	h4 {
@@ -324,6 +327,11 @@ body.homepage.collection-type-page.has-promoted-gallery.transparent-header {
 			color: inherit;
 		}
 	}
+	
+	.sqs-block-code {
+		overflow: auto;
+	}
+	
 	.meta .meta-title {
 		display: block !important;
 		font-size: 48px !important;
