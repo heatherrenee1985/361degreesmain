@@ -34,12 +34,19 @@
     <squarespace:block-field id="extraBlock3" columns="4" label="Block 3" />
 </div>
 <div class="feefo">
-  <h3>
-    <img class="feefo-logo" src="/assets/feefo.png">
-  </h3>
-  <h4>
-  of our customers are happy with our service
-  </h4>
+  <div class="">
+    <h3>
+      <img class="feefo-logo" src="/assets/feefo.png"> 100%
+    </h3>
+    <h4>
+    of our customers are happy with our service
+    </h4>
+  <div>
+  <div>
+    <blockquote>
+    Excellent service. Engineer turned up on time and was very thorough and polite. Service was completed in a timely fashion with no fuss and no mess.
+    </blockquote>
+  </div>
 </div>
 <div class="full-form green">
   <a name="contact"></a> 
