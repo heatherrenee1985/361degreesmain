@@ -1,8 +1,5 @@
-      <!--<div id="preFooter">
-        <div class="pre-footer-inner">
-          <squarespace:block-field id="preFooterBlocks" columns="12" label="Pre-Footer Content" />
-        </div>
-      </div>-->
+      <div id="preFooter">
+      </div>
 
       <footer id="footer" role="contentinfo">
        <div class="logo">
