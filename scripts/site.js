@@ -137,23 +137,24 @@ Y.use('node', function (Y) {
 			
 			//FEEFO
 			var feefo = Y.one('.feefo-data');
-			var feefoSince = item.getAttribute('data-since');
-			var feefoLimit = item.getAttribute('data-limit');
-			var feefoSortBy = item.getAttribute('data-sortby');
-			var feefoVendorRef = item.getAttribute('data-product');
-			
-			var xhr = new XMLHttpRequest();
-			xhr.onload = function() {
-				dump(xhr.responseXML.documentElement.nodeName);
-			}
-			xhr.onerror = function() {
-				dump('Error while getting XML.');
-			}
-			xhr.open('GET', 'example.xml');
-			xhr.responseType = 'document';
-			xhr.send();
+			if(feefo) {
+				var feefoSince = item.getAttribute('data-since');
+				var feefoLimit = item.getAttribute('data-limit');
+				var feefoSortBy = item.getAttribute('data-sortby');
+				var feefoVendorRef = item.getAttribute('data-product');
+				
+				var xhr = new XMLHttpRequest();
+				xhr.onload = function() {
+					dump(xhr.responseXML.documentElement.nodeName);
+				}
+				xhr.onerror = function() {
+					dump('Error while getting XML.');
+				}
+				xhr.open('GET', 'http://ww2.feefo.com/api/xmlfeedback?merchantidentifier=361-degrees&since=' + feefoSince +'&limit=' + feefoLimit + '&sortby=' + feefoSortBy + '&vendorref=' + urlencode(feefoVendorRef));
+				xhr.responseType = 'document';
+				xhr.send();
 
-			$feedUrl = 'http://ww2.feefo.com/api/xmlfeedback?merchantidentifier=361-degrees&since=' + feefoSince +'&limit=' + feefoLimit + '&sortby=' + feefoSortBy + '&vendorref=' + urlencode(feefoVendorRef);
+			}
 
 			var knowledgeHub = Y.one('.knowledge-hub-block');
 			if(knowledgeHub) {
