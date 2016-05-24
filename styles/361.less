@@ -102,9 +102,10 @@ blockquote::after, .quote-block blockquote::after, .sqs-block-quote  blockquote:
 
 //FEEFO STYLEs
 .feefo {
-	padding: 50px 0;
+	padding: 50px 0 30px;
 	border-top: 10px solid @color361;
 	border-bottom: 10px solid @color361;
+	margin-bottom: 50px;
 	
 	blockquote {
 		padding: 0;
@@ -112,7 +113,12 @@ blockquote::after, .quote-block blockquote::after, .sqs-block-quote  blockquote:
 	}
 	
 	h2:after {
-		border-bottom: none;
+		border-bottom: none !important;
+	}
+	
+	h4 {
+		font-size: 15px;
+    text-align: center;
 	}
 }
 
