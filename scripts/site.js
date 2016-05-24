@@ -126,9 +126,11 @@ Y.use('node', function (Y) {
 			if(body.hasClass('view-item')) {
 				if(body.hasClass('collection-type-blog') || body.hasClass('collection-type-case-study')) {
 					var blogItem = Y.one('.blog-item');
-					blogItem.addClass('preview').on('click', function(){
-						blogItem.removeClass('preview')
-					})
+					if(blogItem) {
+						blogItem.addClass('preview').on('click', function(){
+							blogItem.removeClass('preview')
+						})
+					}
 				}
 			}
 			
