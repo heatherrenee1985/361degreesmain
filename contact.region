@@ -4,9 +4,10 @@
   <figure id="thumbnail" class="loading content-fill"><img src="/assets/contact.png" /></figure>
   <div class="desc-wrapper contact-page">
     <h1>Contact us</h1>
-    <h3>
-      Details
-    </h3>
   </div>
+</div>
+<div class="full-form green">
+  <a name="contact"></a> 
+  <div class="typeform-widget" data-url="https://361degrees.typeform.com/to/w7dVZk" data-text="Contact Form" style="width:100%;height:500px;"></div>
 </div>
        
