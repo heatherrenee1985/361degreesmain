@@ -2,6 +2,8 @@
 	
 	<ol class="category-filter">
 	</ol>
+	
+	<h2> Blog Posts </h2>
 
 	<squarespace:query collection="blog" limit="6">
 		<ol class="blog-list">
@@ -16,6 +18,7 @@
 		</ol>
 	</squarespace:query>
 
+	<h2> Case Studies </h2>
 	<squarespace:query collection="case-studies" limit="6">
 		<ol class="case-study-list">
 		{.repeated section items}
@@ -29,6 +32,7 @@
 		</ol>
 	</squarespace:query>
 
+	<h2> Videos </h2>
 	<squarespace:query collection="video" limit="6">
 		<ol class="video-list">
 		{.repeated section items}
