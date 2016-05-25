@@ -2,7 +2,7 @@
 <div class="banner-thumbnail-wrapper" data-content-field="main-image">
   <div class="color-overlay"></div>
   <figure id="thumbnail" class="loading content-fill"><img src="/assets/contact.png" /></figure>
-  <div class="contact-page">
+  <div class="desc-wrapper contact-page">
     <h1>Contact us</h1>
     <h3>
       Details
