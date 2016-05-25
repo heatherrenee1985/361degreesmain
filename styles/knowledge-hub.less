@@ -1,6 +1,6 @@
 .knowledge-hub-block {
-	margin: 1em auto;
-	padding: 1em 0;
+	margin: 0 auto;
+	padding: 0 0;
 	max-width: 1800px;
 	> h1 {
 		text-align: center;
@@ -17,13 +17,31 @@
 		> li {
 		}
 	}
+	h2 {
+		text-align: center;
+		font-family: "omnes-pro";
+		font-size: 1.8em;
+		margin: 50px auto;
+		font-weight: 500;
+		position: relative;
+
+		
+		&:after {
+			content: '';
+			height: 5px;
+			width: 30%;
+			border-bottom: 5px solid @color361;
+			position: absolute;
+			bottom: -15px;
+			left: 35%;
+		}
+	}
 	> ol {
 		margin: 0;
 		padding: 0;
 		display: flex;
 		-webkit-flex-flow: row wrap;
 		justify-content: space-around;
-		background: black;
 		&.category-filter {
 			background: black;
 			padding: .25em 0;
