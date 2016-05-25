@@ -1,5 +1,5 @@
 
-<div class="banner-thumbnail-wrapper" data-content-field="main-image">
+<div class="banner-thumbnail-wrapper contact" data-content-field="main-image">
   <div class="color-overlay dark"></div>
   <figure id="thumbnail" class="loading content-fill"><img src="/assets/contact.png" /></figure>
   <div class="desc-wrapper contact-page">
