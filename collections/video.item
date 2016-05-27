@@ -1,5 +1,5 @@
 {.section item}
-<div class="video-item">
-	{structuredContent.oembed.html}
-</div>
+	<div class="video-item">
+		{structuredContent.oembed.html}
+	</div>
 {.end}
