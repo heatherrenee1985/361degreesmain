@@ -1,14 +1,13 @@
 
 <div class="banner-thumbnail-wrapper contact" data-content-field="main-image">
   <div class="color-overlay dark"></div>
-  <figure id="thumbnail" class="loading content-fill"><img src="/assets/contact.png" /></figure>
+  <figure id="thumbnail" class="loading content-fill"><img src="/assets/contact.jpg" /></figure>
   <div class="desc-wrapper contact-page">
     <h1>Contact us</h1>
-    <p><a href="tel:00448452221361"> <span class="glyphicon glyphicon-earphone"></span> 0845 2221 361</a> <a href="email:solutions@3sixty1.co.uk"> <span class="glyphicon glyphicon-envelope"></span> solutions@3sixty1.co.uk</a></p>
+    <p>
+      <a href="tel:00448452221361"> <span class="glyphicon glyphicon-earphone"></span> 0845 2221 361</a> 
+      <a class="typeform-share link btn" href="https://361degrees.typeform.com/to/w7dVZk" data-mode="2" target="_blank">solutions@3sixty1.co.uk</a>
+    </p>
   </div>
-</div>
-<div class="full-form green">
-  <a name="contact"></a> 
-  <div class="typeform-widget" data-url="https://361degrees.typeform.com/to/w7dVZk" data-text="Contact Form" style="width:100%;height:500px;"></div>
 </div>
        
