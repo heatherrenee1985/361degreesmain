@@ -35,20 +35,23 @@
       {.collectionTypeNameEquals? index}
       {.or}
         {.collectionTypeNameEquals? page}
-          <div id="promotedGalleryWrapper" class="sqs-layout promoted-gallery-wrapper"><div class="row"><div class="col"></div></div></div>
-          {.main-image?}
-          <div class="banner-thumbnail-wrapper{.if description} has-description{.end}" data-content-field="main-image" data-collection-id="{collection.id}" data-edit-main-image="Banner" data-annotation-alignment="bottom left">
-            {.section mainImage}
-            <div class="color-overlay"></div>
-            <figure id="thumbnail" class="loading content-fill"><img {@|image-meta} /></figure>
-            {.end}
-            <div class="desc-wrapper" data-collection-id="{id}">
-              <h1>{title}</h1>
-              {.if description}
-                {description}
+          {.or}
+          {.collectionTypeNameEquals? case-study}
+            <div id="promotedGalleryWrapper" class="sqs-layout promoted-gallery-wrapper"><div class="row"><div class="col"></div></div></div>
+            {.main-image?}
+            <div class="banner-thumbnail-wrapper{.if description} has-description{.end}" data-content-field="main-image" data-collection-id="{collection.id}" data-edit-main-image="Banner" data-annotation-alignment="bottom left">
+              {.section mainImage}
+              <div class="color-overlay"></div>
+              <figure id="thumbnail" class="loading content-fill"><img {@|image-meta} /></figure>
               {.end}
+              <div class="desc-wrapper" data-collection-id="{id}">
+                <h1>{title}</h1>
+                {.if description}
+                  {description}
+                {.end}
+              </div>
             </div>
-          </div>
+            {.end}
           {.end}
         {.end}
       {.end}
