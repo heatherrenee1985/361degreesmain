@@ -34,11 +34,11 @@
     {.or}
       {.collectionTypeNameEquals? index}
       {.or}
-        {.collectionTypeNameEquals? page}
+        {.collectionTypeNameEquals? blog}
           {.or}
           {.collectionTypeNameEquals? case-study}
             {.or}
-            {.collectionTypeNameEquals? blog}
+            {.collectionTypeNameEquals? page}
               <div id="promotedGalleryWrapper" class="sqs-layout promoted-gallery-wrapper"><div class="row"><div class="col"></div></div></div>
               {.main-image?}
               <div class="banner-thumbnail-wrapper{.if description} has-description{.end}" data-content-field="main-image" data-collection-id="{collection.id}" data-edit-main-image="Banner" data-annotation-alignment="bottom left">
