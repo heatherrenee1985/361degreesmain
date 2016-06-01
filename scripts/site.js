@@ -201,6 +201,13 @@ Y.use('node', function (Y) {
 								});
 								return;
 							}
+							var heading =  Y.one('case_studies_heading');
+							if(category === 'Company News') {
+								heading.hide();
+							}
+							else {
+								heading.show();
+							}
 							lists.each(function(list){
 								list.all('li').each(function(item){
 									item[ item.getAttribute('data-categories').split(',').indexOf(category) == -1 ? 'hide' : 'show' ]();

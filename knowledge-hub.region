@@ -3,7 +3,7 @@
 	<ol class="category-filter">
 	</ol>
 	
-	<h2><a href="/case-studies">Case Studies</a></h2>
+	<h2 class="case_studies_heading"><a href="/case-studies">Case Studies</a></h2>
 	<squarespace:query collection="case-studies" limit="6">
 		<ol class="case-study-list">
 		{.repeated section items}
