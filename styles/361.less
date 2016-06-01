@@ -299,16 +299,26 @@ body.collection-type-video {
     font-size: 29px;
     font-weight: 700;
 	}
+	
+	p {
+		font-size: 15px;
+	}
 }
 
 .video-item {
-	margin: 0 -32px;
 	text-align: center;
+	padding: 20px;
 	> iframe,
 	> video {
 		margin: auto;
 		max-width: 100%;
 		max-height: 55vw;
+	}
+}
+
+@media (max-width: 768px) { 
+	.video-title, .video-item {
+		width: 100%;
 	}
 }
 
