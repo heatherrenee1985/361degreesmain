@@ -121,7 +121,6 @@ a.btn {
 }
 
 // QUOTE STYLES
-
 blockquote, .quote-block blockquote, .sqs-block-quote blockquote {
 	margin: 20px auto;
 	padding: .5em 0;
@@ -565,6 +564,37 @@ body.homepage.collection-type-page.has-promoted-gallery.transparent-header {
 		
 		&:hover {
 			opacity: 1;
+		}
+	}
+}
+
+.jumbotron.map {
+	position: relative;
+	padding-bottom: 25%; // This is the aspect ratio
+	height: 0;
+	overflow: hidden;
+
+	iframe {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100% !important;
+		height: 100% !important;
+	}
+
+	&.scrolloff iframe{
+			pointer-events: none;
+	}
+}
+
+@media (max-width: 768px) { 
+	.contactmap {
+		iframe {
+				display:none;
+		}
+
+		a {
+				display: block;
 		}
 	}
 }

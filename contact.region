@@ -11,4 +11,6 @@
   </div>
   <squarespace:block-field id="preFooterBlocks" columns="12" label="Pre-Footer Content" />
 </div>
+<div id="map" class="jumbotron map"><iframe width="800" height="600" style="border: 0;" id="contact-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2461.8665900385577!2d-0.4619897999999999!3d51.899898700000016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487649243be41f19%3A0xc26410074d99ca69!2s361+Degrees!5e0!3m2!1sen!2suk!4v1442231618978" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+</div>
        

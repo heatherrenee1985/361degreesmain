@@ -134,8 +134,19 @@ Y.use('node', function (Y) {
 				}
 			}
 			
+			// GOOGLE MAP IFRAME
+			var map = Y.one('#map');
+			map.on('click', function(event){
+				event.preventDefault();
+				if(a.hasClass('scrolloff')) {
+					a.removeClass('scrolloff');
+				}
+				else {
+					a.addClass('scrolloff');
+				}
+			});
 			
-			//FEEFO
+			// FEEFO
 			var feefo = Y.one('.feefo-data');
 			if(feefo) {
 				var feefoSince = item.getAttribute('data-since');
