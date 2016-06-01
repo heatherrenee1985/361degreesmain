@@ -1,5 +1,9 @@
 {.section item}
-	<div class="video-item">
+	<div class="video-title sqs-col-6">
+		<h1>{{title}}</h1>
+		<p>{{description}}</p>
+	</div>
+	<div class="video-item sqs-col-6">
 		{structuredContent.oembed.html}
 	</div>
 {.end}
