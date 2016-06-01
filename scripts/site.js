@@ -138,11 +138,11 @@ Y.use('node', function (Y) {
 			var map = Y.one('#map');
 			map.on('click', function(event){
 				event.preventDefault();
-				if(a.hasClass('scrolloff')) {
-					a.removeClass('scrolloff');
+				if(map.hasClass('scrolloff')) {
+					map.removeClass('scrolloff');
 				}
 				else {
-					a.addClass('scrolloff');
+					map.addClass('scrolloff');
 				}
 			});
 			
