@@ -136,15 +136,17 @@ Y.use('node', function (Y) {
 			
 			// GOOGLE MAP IFRAME
 			var map = Y.one('#map');
-			map.on('click', function(event){
-				event.preventDefault();
-				if(map.hasClass('scrolloff')) {
-					map.removeClass('scrolloff');
-				}
-				else {
-					map.addClass('scrolloff');
-				}
-			});
+			if(map) {
+				map.on('click', function(event){
+					event.preventDefault();
+					if(map.hasClass('scrolloff')) {
+						map.removeClass('scrolloff');
+					}
+					else {
+						map.addClass('scrolloff');
+					}
+				});
+			}
 			
 			// FEEFO
 			var feefo = Y.one('.feefo-data');
