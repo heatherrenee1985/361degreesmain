@@ -173,7 +173,7 @@ Y.use('node', function (Y) {
 					});
 				});
 				Y.each(categories, function(category){
-					if(category !== 'Uncategorized') {
+					if(category === 'Solutions' || category === 'Technology' || category === 'Company News' || category === 'Case Studies') {
 						var li = Y.Node.create('<li><a></a></li>'),
 							a = li.one('a');
 						a.setHTML(category);
