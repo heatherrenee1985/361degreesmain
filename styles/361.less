@@ -296,18 +296,10 @@ body.collection-type-video {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	color: white;
-	
-	h1 {
-		color: white;
-    font-size: 29px;
-    font-weight: 700;
-		margin-bottom: 0;
-		margin-top: 50px;
-	}
 	
 	p {
 		font-size: 15px;
+		font-weight: 600;
 	}
 }
 
@@ -563,10 +555,23 @@ body.homepage.collection-type-page.has-promoted-gallery.transparent-header {
 		display: none;
 	}
 	
+	#headerNav nav a, #sidecarNav nav a, #headerNav nav a:visited, #sidecarNav nav a:visited, #headerNav nav label, #sidecarNav nav label {
+		color: rgba(26,26,26,.7) !important;
+		
+		&:hover {
+			color: rgba(26,26,26,.7) !important;
+		}
+	}
+	
+	.nav-button-style-outline.enable-nav-button #headerNav nav>div:not(.folder):last-child a, .nav-button-style-outline.enable-nav-button #sidecarNav nav>div:not(.folder):last-child a {
+		border: 2px solid rgba(26,26,26,.7) !important;
+    color: rgba(26,26,26,.7) !important;
+	}
+	
 	#page {
     width: 100%;
     overflow: auto;
-    background-color: black;
+    background-color: white;
     padding-top: 86px;
 	}
 }
