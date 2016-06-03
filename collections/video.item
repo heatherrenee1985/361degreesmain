@@ -7,3 +7,7 @@
 		{structuredContent.oembed.html}
 	</div>
 {.end}
+
+<div id="latest_news">
+  <squarespace:block-field id="latestNews" columns="12" label="Latest News" />
+</div>
