@@ -32,7 +32,7 @@
   {.section collection}
     {.collectionTypeNameEquals? gallery}
     {.or}
-      {.collectionTypeNameEquals? index}
+      {.collectionTypeNameEquals? video}
       {.or}
         {.collectionTypeNameEquals? blog}
           {.or}
