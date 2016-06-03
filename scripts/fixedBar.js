@@ -13,7 +13,11 @@
             Y.one('#logoImage img').setAttribute('src', '/assets/logo_green.png');
         } else {
             Y.one('#header').removeClass('sticky');
-            Y.one('#logoImage img').setAttribute('src', '/assets/logo_white.png');
+            var videoItem = Y.one('.collection-type-video.view-item'); 
+			if(!videoItem) {
+				Y.one('#logoImage img').setAttribute('src', '/assets/logo_white.png');
+			}
+            
         }
      });
  

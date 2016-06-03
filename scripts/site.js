@@ -168,6 +168,12 @@ Y.use('node', function (Y) {
 				xhr.send();
 
 			}
+			
+			var videoItem = Y.one('.collection-type-video.view-item'); 
+			if(videoItem) {
+				Y.one('#logoImage img').setAttribute('src', '/assets/logo_green.png');
+			}
+			
 
 			var knowledgeHub = Y.one('.knowledge-hub-block');
 			if(knowledgeHub) {
