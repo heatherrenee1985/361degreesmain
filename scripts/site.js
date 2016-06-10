@@ -181,6 +181,7 @@ Y.use('node', function (Y) {
 					categoryList = knowledgeHub.one('ol.category-filter'),
 					lists = knowledgeHub.all('ol.blog-list, ol.case-study-list, ol.video-list');
 				lists.each(function(list){
+					var counter = 0;
 					list.all('li').each(function(item){
 						var cats = item.getAttribute('data-categories') || "";
 						// assuming only one each, must fix for multi-cats
@@ -189,6 +190,11 @@ Y.use('node', function (Y) {
 								categories.push(cat);
 							}
 						});
+						counter++;
+						if(counter >= 6) {
+							item.removeClass('show');
+							item.addClass('hide');
+						}
 					});
 				});
 				Y.each(categories, function(category){
