@@ -6,7 +6,13 @@
 		text-align: center;
 	}
 	.blog-list, .case-study-list, .video-list  {
-		li:not([style*="display:none"]):not([style*="display: none"]):nth-of-type(n+7) { 
+		/*li:not([style*="display:none"]):not([style*="display: none"]):nth-of-type(n+7) { 
+			display: none;
+		}*/
+		li.hide {
+			display: none;
+		}
+		li.show:nth-of-type(n+7) {
 			display: none;
 		}
 	}
