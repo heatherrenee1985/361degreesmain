@@ -222,7 +222,7 @@ Y.use('node', function (Y) {
 										item.removeClass('show');
 										item.addClass('hide');
 									} else {
-										if(counter <= 6) {
+										if(counter < 6) {
 											item.removeClass('hide');
 											item.addClass('show');
 											counter++;
