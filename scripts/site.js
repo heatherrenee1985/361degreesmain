@@ -216,7 +216,14 @@ Y.use('node', function (Y) {
 							}
 							lists.each(function(list){
 								list.all('li').each(function(item){
-									item[ item.getAttribute('data-categories').split(',').indexOf(category) == -1 ? 'hide' : 'show' ]();
+									//item[ item.getAttribute('data-categories').split(',').indexOf(category) == -1 ? 'hide' : 'show' ]();
+									if (item.getAttribute('data-categories').split(',').indexOf(category) == -1) {
+										item.removeClass('show');
+										item.addClass('hide');
+									} else {
+										item.removeClass('hide');
+										item.addClass('show');
+									}
 								})
 							});
 							Y.all('.filter-link').removeClass('active');
