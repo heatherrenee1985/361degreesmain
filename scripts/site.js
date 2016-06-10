@@ -191,7 +191,7 @@ Y.use('node', function (Y) {
 							}
 						});
 						counter++;
-						if(counter >= 6) {
+						if(counter > 6) {
 							item.removeClass('show');
 							item.addClass('hide');
 						}
