@@ -215,14 +215,22 @@ Y.use('node', function (Y) {
 								heading.show();
 							}
 							lists.each(function(list){
+								var counter = 0;
 								list.all('li').each(function(item){
 									//item[ item.getAttribute('data-categories').split(',').indexOf(category) == -1 ? 'hide' : 'show' ]();
 									if (item.getAttribute('data-categories').split(',').indexOf(category) == -1) {
 										item.removeClass('show');
 										item.addClass('hide');
 									} else {
-										item.removeClass('hide');
-										item.addClass('show');
+										if(counter <= 6) {
+											item.removeClass('hide');
+											item.addClass('show');
+											counter++;
+										}
+										else {
+											item.removeClass('show');
+											item.addClass('hide');
+										}
 									}
 								})
 							});
