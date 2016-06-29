@@ -214,11 +214,14 @@ Y.use('node', function (Y) {
 								return;
 							}
 							var heading =  Y.one('.case_studies_heading');
-							if(category === 'Company News') {
+							var caseStudyListing =  Y.one('.case-study-list');
+							if(category === 'Company News' || category === 'Technology') {
 								heading.hide();
+								caseStudyListing.hide();
 							}
 							else {
 								heading.show();
+								caseStudyListing.show();
 							}
 							lists.each(function(list){
 								var counter = 0;
