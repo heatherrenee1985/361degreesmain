@@ -89,8 +89,9 @@
 {.if pagination}
   <div class="knowledge-hub-block">
    <h2> Further your knowledge </h2>
+   <ol class="blog-list case-study-list">
     <squarespace:query collection="blog" limit="3">
-      <ol class="blog-list">
+      
       {.repeated section items}
         <li class="blog-item">
           <a href="{fullUrl}">
@@ -99,11 +100,9 @@
           </a>
         </li>
       {.end}
-      </ol>
     </squarespace:query>
   
     <squarespace:query collection="case-studies" limit="3">
-      <ol class="case-study-list">
       {.repeated section items}
         <li class="case-study-item">
           <a href="{fullUrl}">
@@ -112,7 +111,7 @@
           </a>
         </li>
       {.end}
-      </ol>
     </squarespace:query>
+    </ol>
   </div>
 {.end}
