@@ -351,6 +351,30 @@ blockquote::after, .quote-block blockquote::after, .sqs-block-quote  blockquote:
 	}
 }
 
+col.sqs-col-12.span-12 {
+	position: relative;
+}
+.form-block.sqs-block-form {
+		position: absolute;
+    width: 300px;
+    right: 0;
+    bottom: 12px;
+    background: #333333;
+    color: white;
+    font-size: 10px;
+    z-index: 100;
+
+		.form-wrapper .field-list .field {
+				position: relative;
+				margin: 0 0 10px;
+
+				.field-element {
+					width: 100%;
+					padding: 6px 12px;
+				}
+		}
+}
+
 .sqs-block-summary-v2 .summary-block-setting-design-carousel .summary-block-header {
     height: 0 !important;
 }
