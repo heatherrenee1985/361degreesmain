@@ -359,7 +359,7 @@ blockquote::after, .quote-block blockquote::after, .sqs-block-quote  blockquote:
     width: 300px;
     right: 0;
     bottom: 12px;
-    background: #333333;
+  	background: rgba(33,33,33,.8);
     color: white;
     font-size: 10px;
     z-index: 100;
@@ -381,6 +381,19 @@ blockquote::after, .quote-block blockquote::after, .sqs-block-quote  blockquote:
 					padding: 6px 12px;
 				}
 		}
+}
+
+@media (max-width: 768px) { 
+	.form-block.sqs-block-form {
+		position: relative;
+		width: 100%;
+		left: 0;
+		top: 0;
+		background: rgba(33,33,33,.8);
+		color: white;
+		font-size: 10px;
+		z-index: 100;
+	}
 }
 
 .sqs-block-summary-v2 .summary-block-setting-design-carousel .summary-block-header {
