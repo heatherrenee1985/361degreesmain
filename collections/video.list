@@ -1,4 +1,4 @@
-<div class="knowledge-hub-block">	
+<div class="content-hub-block">	
 		<ol class="blog-list">
       {.repeated section items}
         <li class="blog-item" id="article-{id}" data-item-id="{id}">
