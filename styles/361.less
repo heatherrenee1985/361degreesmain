@@ -717,13 +717,17 @@ body.homepage.collection-type-page.has-promoted-gallery.transparent-header {
 	}
 	.image-wrapper {
 
-		&:hover + .meta {
-			display: block !important;
+		&:hover + .meta, &:hover + .meta:hover {
 			display: block !important;
 			position: absolute;
-			margin-top: -40%;
+			margin-top: calc(-25vw + 38px);
 			background-color: rgba(0,0,0,.5);
 			width: 100%;
+			height: calc(25vw - 38px);
+			overflow: hidden;
+			color: #fff;
+
+
 		
 		}
 
@@ -731,6 +735,10 @@ body.homepage.collection-type-page.has-promoted-gallery.transparent-header {
 
 	.meta {
 		display: none !important;
+
+		p + p {
+			font-size: 0.8em;
+		}
 	}
 
 
