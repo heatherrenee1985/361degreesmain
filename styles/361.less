@@ -717,7 +717,7 @@ body.homepage.collection-type-page.has-promoted-gallery.transparent-header {
 	}
 	.image-wrapper {
 
-		&:hover + .meta, &:hover + .meta:hover {
+		&:hover + .meta {
 			display: block !important;
 			position: absolute;
 			margin-top: ~"calc(-25vw + 38px)";
@@ -726,9 +726,13 @@ body.homepage.collection-type-page.has-promoted-gallery.transparent-header {
 			height: ~"calc(25vw - 38px)";
 			overflow: hidden;
 			color: #fff;
+			padding: 10px;
+    	box-sizing: border-box;
 
+		}
 
-		
+		&:not(:first-of-type) {
+			margin-top: 34px;
 		}
 
 	}
@@ -736,8 +740,26 @@ body.homepage.collection-type-page.has-promoted-gallery.transparent-header {
 	.meta {
 		display: none !important;
 
+		h3 {
+			border-bottom: none;
+			padding-bottom: 0;
+		}
+
 		p + p {
 			font-size: 0.8em;
+		}
+
+		&:hover {
+			display: block !important;
+			position: absolute;
+			margin-top: ~"calc(-25vw + 38px)";
+			background-color: rgba(0,0,0,.5);
+			width: 100%;
+			height: ~"calc(25vw - 38px)";
+			overflow: hidden;
+			color: #fff;
+			padding: 10px;
+    	box-sizing: border-box;
 		}
 	}
 
