@@ -710,19 +710,27 @@ body.homepage.collection-type-page.has-promoted-gallery.transparent-header {
 
 //TEAM GALLERY STACK
 
-.sqs-gallery-block-stacked {
+.sqs-gallery-block-stacked.sqs-gallery-block-show-meta {
 
-
+	.sqs-gallery {
+		position: relative;
+	}
 	.image-wrapper {
 
 		&:hover + .meta {
-			display: block;
+			display: block !important;
+			display: block !important;
+			position: absolute;
+			margin-top: -40%;
+			background-color: rgba(0,0,0,.5);
+			width: 100%;
+		
 		}
 
 	}
 
 	.meta {
-		display: none;
+		display: none !important;
 	}
 
 
