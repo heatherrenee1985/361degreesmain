@@ -41,7 +41,7 @@
 
 	<div class="title-list">
 		<ul class="type-list">
-			<li class="blog selected">Blog</li>
+			<li class="blog selected">News</li>
 			<li class="case">Case Studies</li>
 			<li class="video">Video</li>
 		</ul>
