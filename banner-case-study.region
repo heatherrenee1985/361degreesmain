@@ -27,7 +27,7 @@
       {.end}
     {.end}
   {.end}
-{.end}
+
 {.or}
   {.section collection}
     {.collectionTypeNameEquals? gallery}

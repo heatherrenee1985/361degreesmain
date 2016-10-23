@@ -174,12 +174,41 @@ Y.use('node', function (Y) {
 				Y.one('#logoImage img').setAttribute('src', '/assets/logo_green.png');
 			}
 			
+			var itemTypes = Y.all('.type-list li');
+			itemTypes.on('click', function(event){
+				var a = event.target;
+				event.preventDefault();
+
+
+
+				itemTypes.each(function(item){
+						item.removeClass('selected');
+				});
+
+				var titleListings = Y.all('.title-list .title-listing');
+				titleListings.each(function(item){
+						item.removeClass('selected');
+				});
+				a.addClass('selected');
+
+				if(a.hasClass('blog')){
+					Y.one('.title-list .blog-listing').addClass('selected');
+				}
+				if(a.hasClass('case')){
+					Y.one('.title-list .case-study-listing').addClass('selected');
+				}
+				if(a.hasClass('video')){
+					Y.one('.title-list .video-listing').addClass('selected');
+				}
+			
+			});
+
 
 			var knowledgeHub = Y.one('.knowledge-hub-block');
 			if(knowledgeHub) {
 				var categories = [],
 					categoryList = knowledgeHub.one('ol.category-filter'),
-					lists = knowledgeHub.all('ol.blog-list, ol.case-study-list, ol.video-list');
+					lists = knowledgeHub.all('.blog-list, .case-study-list, .video-list');
 				lists.each(function(list){
 					var counter = 0;
 					list.all('li').each(function(item){
@@ -191,7 +220,11 @@ Y.use('node', function (Y) {
 							}
 						});
 						counter++;
-						if(counter > 6) {
+						if(counter > 6 && item._node.parentNode.nodeName === 'OL') {
+							item.removeClass('show');
+							item.addClass('hide');
+						}
+						if(counter > 10 && item._node.parentNode.nodeName === 'UL') {
 							item.removeClass('show');
 							item.addClass('hide');
 						}
@@ -215,14 +248,19 @@ Y.use('node', function (Y) {
 							}
 							var heading =  Y.one('.case_studies_heading');
 							var caseStudyListing =  Y.one('.case-study-list');
-							if(category === 'Company News' || category === 'Technology') {
-								heading.hide();
-								caseStudyListing.hide();
+							if(heading !== null)
+							{
+								if(category === 'Company News' || category === 'Technology') {
+									heading.hide();
+									caseStudyListing.hide();
+								}
+								else {
+									heading.show();
+									caseStudyListing.show();
+								}
 							}
-							else {
-								heading.show();
-								caseStudyListing.show();
-							}
+							
+							
 							lists.each(function(list){
 								var counter = 0;
 								list.all('li').each(function(item){

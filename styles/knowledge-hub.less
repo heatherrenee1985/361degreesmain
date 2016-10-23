@@ -16,19 +16,7 @@
 			display: none;
 		}*/
 	}
-	
-	> .blog-list {
-		> li {
-		}
-	}
-	> .case-study-list {
-		> li {
-		}
-	}
-	> .video-list {
-		> li {
-		}
-	}
+
 	h2 {
 		text-align: center;
 		font-family: "omnes-pro";
@@ -48,7 +36,7 @@
 			left: 35%;
 		}
 	}
-	> ol {
+	ol {
 		margin: 0;
 		padding: 0;
 		display: flex;
@@ -143,6 +131,81 @@
 			}
 		}
 	}
+
+	.featured-list {
+		width: 66%;
+		float: left;
+
+		> ol {
+			> li {
+				width: 50%;
+			}
+		}
+	}
+
+	.title-list {
+		width: 34%;
+		background-color: #ffffff;
+		display: inline-block;
+
+		.title-listing ul {
+			padding: 0;
+			li {
+				list-style-type: none;
+
+				article {
+				
+					display: block;
+					
+					h3 {
+						font-size: 15px;
+						margin-bottom: 0;
+						text-transform: none;
+						text-align: left;
+					}
+
+				}
+				&+li {
+					border-top: 1px solid rgba(26, 26, 26, .2);
+				}
+
+				&:nth-of-type(n+11) {
+					display: none;
+				}
+			}
+		} 
+		
+		h4 {
+			text-align: center;
+		}
+
+		.title-listing {
+			display: none;
+
+			&.selected {
+				display: block;
+			}
+		}
+
+		.type-list {
+			font-size: 11px;
+			display: flex;
+			padding: 0;
+			flex-direction: row;
+			justify-content: space-around;
+			
+			li {
+				list-style-type: none;
+				transition: all linear 0.5s;
+				cursor: pointer;
+
+				&.selected, &:hover {
+					border-bottom: 1px solid rgba(26, 26, 26, .2);
+					
+				}
+			}
+		}
+	}
 }
 
 @media (min-width: 40em) and (max-width: 70em){
@@ -171,6 +234,13 @@
 						opacity: .7;
 					}
 			}
+		}
+
+		.featured-list {
+			display: none;
+		}
+		.title-list {
+			width: 100%;
 		}
 	}
 }

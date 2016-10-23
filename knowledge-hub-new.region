@@ -3,45 +3,98 @@
 	<ol class="category-filter">
 	</ol>
 	
-	<h2 class="case_studies_heading"><a href="/case-studies">Case Studies</a></h2>
-	<squarespace:query collection="case-studies" limit="10">
-		<ol class="case-study-list">
-		{.repeated section items}
-			<li class="case-study-item" data-categories="{categories}">
-				<a href="{fullUrl}">
-					<h1>{title}</h1>
-					<div class="background" style="background-image:url({assetUrl})"></div>
-				</a>
-			</li>
-		{.end}
+	<div class="featured-list">
+		<ol class="case-study-list blog-list video-list">
+			<squarespace:query collection="blog" limit="2" featured="true">	
+				{.repeated section items}
+					<li class="blog-item" data-categories="{categories}">
+						<a href="{fullUrl}">
+							<h1>{title}</h1>
+							<div class="background" style="background-image:url({assetUrl})"></div>
+						</a>
+					</li>
+				{.end}
+			</squarespace:query>
+			<squarespace:query collection="case-studies" limit="2" featured="true">	
+				{.repeated section items}
+					<li class="case-study-item" data-categories="{categories}">
+						<a href="{fullUrl}">
+							<h1>{title}</h1>
+							<div class="background" style="background-image:url({assetUrl})"></div>
+						</a>
+					</li>
+				{.end}
+			</squarespace:query>
+			<squarespace:query collection="video" limit="2" category="Featured">	
+				{.repeated section items}
+					<li class="video-item" data-categories="{categories}">
+						<a href="{fullUrl}">
+							<h1>{title}</h1>
+							<div class="background" style="background-image:url({assetUrl})"></div>
+						</a>
+					</li>
+				{.end}
+			</squarespace:query>
 		</ol>
-	</squarespace:query>
-	
-	<h2><a href="/blog"> Blog Posts </a></h2>
-	<squarespace:query collection="blog" limit="10">
-		<ol class="blog-list">
-		{.repeated section items}
-			<li class="blog-item" data-categories="{categories}">
-				<a href="{fullUrl}">
-					<h1>{title}</h1>
-					<div class="background" style="background-image:url({assetUrl})"></div>
-				</a>
-			</li>
-		{.end}
-		</ol>
-	</squarespace:query>
 
-	<h2><a href="/video"> Videos </a></h2>
-	<squarespace:query collection="video" limit="10">
-		<ol class="video-list">
-		{.repeated section items}
-			<li class="video-item" data-categories="{categories}">
-				<a href="{fullUrl}">
-					<h1>{title}</h1>
-					<div class="background" style="background-image:url({assetUrl})"></div>
-				</a>
-			</li>
-		{.end}
-		</ol>
-	</squarespace:query>
+	</div>
+
+	<div class="title-list">
+		<ul class="type-list">
+			<li class="blog selected">Blog</li>
+			<li class="case">Case Studies</li>
+			<li class="video">Video</li>
+		</ul>
+		<div class="blog-listing title-listing selected">
+			<ul class="blog-list">
+				<squarespace:query collection="blog" limit="30">
+					{.repeated section items}
+					<li data-categories="{categories}">
+						<article class="video-item">
+							<a href="{fullUrl}">
+								<h3>{title}</h3>
+							</a>
+						</article>
+					</li>
+					{.end}
+				</squarespace:query>
+			</ul>
+			<h4><a href="/blog"> Read More </a></h4>
+		</div>
+		<div class="case-study-listing title-listing">
+			<ul class="case-study-list">
+			<squarespace:query collection="case-studies" limit="30">
+				{.repeated section items}
+					<li data-categories="{categories}">
+						<article class="video-item">
+							<a href="{fullUrl}">
+								<h3>{title}</h3>
+							</a>
+						</article>
+					</li>
+				{.end}
+			</squarespace:query>
+			</ul>
+			<h4><a href="/case-studies"> Read More </a></h4>
+		</div>
+		<div class="video-listing title-listing">
+			<ul class="video-list">
+			<squarespace:query collection="video" limit="30">
+				{.repeated section items}
+					<li data-categories="{categories}">
+						<article class="video-item">
+							<a href="{fullUrl}">
+								<h3>{title}</h3>
+							</a>
+						</article>
+					</li>
+				{.end}
+			</squarespace:query>
+			</ul>
+			<h4><a href="/video"> Read More </a></h4>
+		</div>
+		
+	</div>
+
+
 </div>
