@@ -1,0 +1,47 @@
+<div class="knowledge-hub-block">
+	
+	<ol class="category-filter">
+	</ol>
+	
+	<h2 class="case_studies_heading"><a href="/case-studies">Case Studies</a></h2>
+	<squarespace:query collection="case-studies" limit="10">
+		<ol class="case-study-list">
+		{.repeated section items}
+			<li class="case-study-item" data-categories="{categories}">
+				<a href="{fullUrl}">
+					<h1>{title}</h1>
+					<div class="background" style="background-image:url({assetUrl})"></div>
+				</a>
+			</li>
+		{.end}
+		</ol>
+	</squarespace:query>
+	
+	<h2><a href="/blog"> Blog Posts </a></h2>
+	<squarespace:query collection="blog" limit="10">
+		<ol class="blog-list">
+		{.repeated section items}
+			<li class="blog-item" data-categories="{categories}">
+				<a href="{fullUrl}">
+					<h1>{title}</h1>
+					<div class="background" style="background-image:url({assetUrl})"></div>
+				</a>
+			</li>
+		{.end}
+		</ol>
+	</squarespace:query>
+
+	<h2><a href="/video"> Videos </a></h2>
+	<squarespace:query collection="video" limit="10">
+		<ol class="video-list">
+		{.repeated section items}
+			<li class="video-item" data-categories="{categories}">
+				<a href="{fullUrl}">
+					<h1>{title}</h1>
+					<div class="background" style="background-image:url({assetUrl})"></div>
+				</a>
+			</li>
+		{.end}
+		</ol>
+	</squarespace:query>
+</div>
