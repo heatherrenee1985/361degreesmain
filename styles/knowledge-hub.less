@@ -71,16 +71,20 @@
 			overflow: hidden;
 			background: #000;
 			min-height: 300px;
-			&:hover {
+
+			&.video-item {
+				padding: 0;
+			}
+			
 				h1 {
 					top: 50%;
 					padding-top: 0;
 					opacity: 1;
 				}
 				img, .background {
-					opacity: .7;
+					opacity: .5;
 				}
-			}
+			
 			h1, img, .background {
 				transition: ease all .6s;
 			}
@@ -93,7 +97,6 @@
 				font-size: 1.6em;
 				z-index: 1;
 				padding: 1em .5em 0 .5em;
-				opacity: 0;
 				text-align: center;
 				display: block;
 				margin: 0;
@@ -104,7 +107,7 @@
 				bottom: 0;
 				left: 0;
 				right: 0;
-				opacity: .7;
+				opacity: .5;
 				background-size: cover;
 				background-position: center center;
 			}
