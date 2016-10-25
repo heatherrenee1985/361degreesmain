@@ -230,8 +230,35 @@ Y.use('node', function (Y) {
 						}
 					});
 				});
+				var li = Y.Node.create('<li><a></a></li>'),
+							a = li.one('a');
+						a.setHTML('All');
+						a.addClass('filter-link');
+						a.set('href', '#category:');
+						a.on('click', function(event){
+							event.preventDefault();
+							if(a.hasClass('active')) {
+								a.removeClass('active');
+								lists.each(function(list){
+									list.all('li').show();
+								});
+								return;
+							}
+							
+							lists.each(function(list){
+								var counter = 0;
+								list.all('li').each(function(item){
+									//item[ item.getAttribute('data-categories').split(',').indexOf(category) == -1 ? 'hide' : 'show' ]();
+								item.removeClass('hide');
+								item.addClass('show');
+								})
+							});
+							Y.all('.filter-link').removeClass('active');
+							a.addClass('active');
+						});
+					categoryList.append(li);
 				Y.each(categories, function(category){
-					if(category === 'Solutions' || category === 'Technology' || category === 'Company News' || category === 'Case Studies') {
+					if(category === 'News' || category === 'Videos' || category === 'Solutions' || category === 'Technology' || category === 'Company News' || category === 'Case Studies') {
 						var li = Y.Node.create('<li><a></a></li>'),
 							a = li.one('a');
 						a.setHTML(category);
