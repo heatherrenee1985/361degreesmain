@@ -208,7 +208,7 @@ Y.use('node', function (Y) {
 			if(knowledgeHub) {
 				var categories = [],
 					categoryList = knowledgeHub.one('ol.category-filter'),
-					lists = knowledgeHub.all('.blog-list, .case-study-list, .video-list');
+					lists = knowledgeHub.all('ol.blog-list, ol.case-study-list, ol.video-list');
 				lists.each(function(list){
 					var counter = 0;
 					list.all('li').each(function(item){
