@@ -5,7 +5,7 @@
 	> h1 {
 		text-align: center;
 	}
-	.blog-list, .case-study-list, .video-list  {
+	ol.blog-list, ol.case-study-list, ol.video-list  {
 		/*li:not([style*="display:none"]):not([style*="display: none"]):nth-of-type(n+7) { 
 			display: none;
 		}*/
@@ -15,6 +15,13 @@
 		/*li.show:nth-of-type(n+7) {
 			display: none;
 		}*/
+		.blog-item + .blog-item + .blog-item, .case-study-item + .case-study-item + .case-study-item, .video-item + .video-item + .video-item {
+				display: none;
+		}
+
+		.show.blog-item + .show.blog-item + .show.blog-item, .show.case-study-item + .show.case-study-item + .show.case-study-item, .show.video-item + .show.video-item + .show.video-item {
+				display: inherit;
+		}
 	}
 
 	h2 {
@@ -254,7 +261,7 @@
 	}
 }
 
-@media only screen and (min-width: 1700px) { 
+@media only screen and (min-width: 1600px) { 
 	.knowledge-hub-block, .content-hub-block {
 			.featured-list {
 				width: 80%;
@@ -263,7 +270,7 @@
 				> ol {
 					> li {
 						width: 50%;
-						min-height: 450px;
+						min-height: 550px;
 						margin-left: -1px;
 					}
 				}
