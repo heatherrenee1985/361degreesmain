@@ -211,6 +211,9 @@ Y.use('node', function (Y) {
 					lists = knowledgeHub.all('ol.blog-list, ol.case-study-list, ol.video-list');
 				lists.each(function(list){
 					var counter = 0;
+					var blogCounter = 0;
+					var caseStudyCounter = 0;
+					var videoCounter = 0;
 					list.all('li').each(function(item){
 						var cats = item.getAttribute('data-categories') || "";
 						// assuming only one each, must fix for multi-cats
@@ -219,7 +222,24 @@ Y.use('node', function (Y) {
 								categories.push(cat);
 							}
 						});
-						counter++;
+						if(item.hasClass('blog-item') && blogCounter < 2) {
+							item.removeClass('hide');
+							item.addClass('show');
+							blogCounter++;
+							counter++;
+						}
+						if(item.hasClass('case-study-item') && caseStudyCounter < 2) {
+							item.removeClass('hide');
+							item.addClass('show');
+							caseStudyCounter++;
+							counter++;
+						}
+						if(item.hasClass('video-item') && videoCounter < 2) {
+							item.removeClass('hide');
+							item.addClass('show');
+							caseStudyCounter++;
+							counter++;
+						}
 						if(counter > 6 && item._node.parentNode.nodeName === 'OL') {
 							item.removeClass('show');
 							item.addClass('hide');
@@ -247,10 +267,38 @@ Y.use('node', function (Y) {
 							
 							lists.each(function(list){
 								var counter = 0;
+								var blogCounter = 0;
+								var caseStudyCounter = 0;
+								var videoCounter = 0;
 								list.all('li').each(function(item){
 									//item[ item.getAttribute('data-categories').split(',').indexOf(category) == -1 ? 'hide' : 'show' ]();
-								item.removeClass('hide');
-								item.addClass('show');
+								if(counter < 6) {
+											if(item.hasClass('blog-item') && blogCounter < 2) {
+												item.removeClass('hide');
+												item.addClass('show');
+												blogCounter++;
+												counter++;
+											}
+											if(item.hasClass('case-study-item') && caseStudyCounter < 2) {
+												item.removeClass('hide');
+												item.addClass('show');
+												caseStudyCounter++;
+												counter++;
+											}
+											if(item.hasClass('video-item') && videoCounter < 2) {
+												item.removeClass('hide');
+												item.addClass('show');
+												caseStudyCounter++;
+												counter++;
+											}
+											//item.removeClass('hide');
+											//item.addClass('show');
+											
+										}
+										else {
+											item.removeClass('show');
+											item.addClass('hide');
+										}
 								})
 							});
 							Y.all('.filter-link').removeClass('active');
@@ -290,6 +338,9 @@ Y.use('node', function (Y) {
 							
 							lists.each(function(list){
 								var counter = 0;
+								var blogCounter = 0;
+								var caseStudyCounter = 0;
+								var videoCounter = 0;
 								list.all('li').each(function(item){
 									//item[ item.getAttribute('data-categories').split(',').indexOf(category) == -1 ? 'hide' : 'show' ]();
 									if (item.getAttribute('data-categories').split(',').indexOf(category) == -1) {
@@ -300,46 +351,70 @@ Y.use('node', function (Y) {
 										if(category === 'Company News' || category === 'Case Studies' || category === 'Videos') {
 											switch(category) {
 												case 'Company News':
-													var others = Y.all('ol .case-study-item, ol .video-item');
-													others.each(function(item){
-															item.addClass('hide');
-													});
 													var news = Y.all('ol .blog-item');
 													news.each(function(item){
 														  item.removeClass('hide');
 															item.addClass('show');
 													});
-												break;
-												case 'Case Studies':
-													var others = Y.all('ol .blog-item, ol .video-item');
+													var others = Y.all('ol .case-study-item, ol .video-item');
 													others.each(function(item){
+														  item.removeClass('show');
 															item.addClass('hide');
 													});
+													
+												break;
+												case 'Case Studies':
 													var news = Y.all('ol .case-study-item');
 													news.each(function(item){
 														  item.removeClass('hide');
 															item.addClass('show');
 													});
+													var others = Y.all('ol .blog-item, ol .video-item');
+													others.each(function(item){
+														  item.removeClass('show');
+															item.addClass('hide');
+													});
+													
 												break;
 												case 'Videos':
 												default:
-													var others = Y.all('ol .blog-item, ol .case-study-item');
-													others.each(function(item){
-															item.addClass('hide');
-													});
+													
 													var news = Y.all('ol .video-item');
 													news.each(function(item){
 														  item.removeClass('hide');
 															item.addClass('show');
+													});
+													var others = Y.all('ol .blog-item, ol .case-study-item');
+													others.each(function(item){
+															item.removeClass('show');
+															item.addClass('hide');
 													});
 												break;
 											}
 										}
 										else {
 											if(counter < 6) {
-												item.removeClass('hide');
-												item.addClass('show');
-												counter++;
+												if(item.hasClass('blog-item') && blogCounter < 2) {
+													item.removeClass('hide');
+													item.addClass('show');
+													blogCounter++;
+													counter++;
+												}
+												if(item.hasClass('case-study-item') && caseStudyCounter < 2) {
+													item.removeClass('hide');
+													item.addClass('show');
+													caseStudyCounter++;
+													counter++;
+												}
+												if(item.hasClass('video-item') && videoCounter < 2) {
+													item.removeClass('hide');
+													item.addClass('show');
+													caseStudyCounter++;
+													counter++;
+												}
+												//item.removeClass('hide');
+												//item.addClass('show');
+												
 											}
 											else {
 												item.removeClass('show');
