@@ -5,7 +5,7 @@
 	
 	<div class="featured-list">
 		<ol class="case-study-list blog-list video-list">
-			<squarespace:query collection="blog" limit="2" featured="true">	
+			<squarespace:query collection="blog" limit="6" featured="true">	
 				{.repeated section items}
 					<li class="blog-item" data-categories="{categories}">
 						<a href="{fullUrl}">
@@ -15,7 +15,7 @@
 					</li>
 				{.end}
 			</squarespace:query>
-			<squarespace:query collection="case-studies" limit="2" featured="true">	
+			<squarespace:query collection="case-studies" limit="6" featured="true">	
 				{.repeated section items}
 					<li class="case-study-item" data-categories="{categories}">
 						<a href="{fullUrl}">
@@ -25,7 +25,7 @@
 					</li>
 				{.end}
 			</squarespace:query>
-			<squarespace:query collection="video" limit="2" category="Featured">	
+			<squarespace:query collection="video" limit="6" category="Featured">	
 				{.repeated section items}
 					<li class="video-item" data-categories="{categories}">
 						<a href="{fullUrl}">

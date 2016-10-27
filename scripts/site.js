@@ -295,15 +295,53 @@ Y.use('node', function (Y) {
 									if (item.getAttribute('data-categories').split(',').indexOf(category) == -1) {
 										item.removeClass('show');
 										item.addClass('hide');
-									} else {
-										if(counter < 6) {
-											item.removeClass('hide');
-											item.addClass('show');
-											counter++;
+									} 
+									else {
+										if(category === 'Company News' || category === 'Case Studies' || category === 'Videos') {
+											switch(category) {
+												case 'Company News':
+													var others = Y.all('ol .case-study-item, ol .video-item');
+													others.each(function(item){
+															item.addClass('hide');
+													});
+													var news = Y.all('ol .blog-item');
+													news.each(function(item){
+															item.addClass('show');
+													});
+												break;
+												case 'Case Studies':
+													var others = Y.all('ol .blog-item, ol .video-item');
+													others.each(function(item){
+															item.addClass('hide');
+													});
+													var news = Y.all('ol .case-study-item');
+													news.each(function(item){
+															item.addClass('show');
+													});
+												break;
+												case 'Videos':
+												default:
+													var others = Y.all('ol .blog-item, ol .case-study-item');
+													others.each(function(item){
+															item.addClass('hide');
+													});
+													var news = Y.all('ol .video-item');
+													news.each(function(item){
+															item.addClass('show');
+													});
+												break;
+											}
 										}
 										else {
-											item.removeClass('show');
-											item.addClass('hide');
+											if(counter < 6) {
+												item.removeClass('hide');
+												item.addClass('show');
+												counter++;
+											}
+											else {
+												item.removeClass('show');
+												item.addClass('hide');
+											}
 										}
 									}
 								})
