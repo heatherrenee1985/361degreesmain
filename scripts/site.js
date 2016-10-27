@@ -271,8 +271,10 @@ Y.use('node', function (Y) {
 								var caseStudyCounter = 0;
 								var videoCounter = 0;
 								list.all('li').each(function(item){
+									item.removeClass('show');
+									item.addClass('hide');
 									//item[ item.getAttribute('data-categories').split(',').indexOf(category) == -1 ? 'hide' : 'show' ]();
-								if(counter < 6) {
+									if(counter < 6) {
 											if(item.hasClass('blog-item') && blogCounter < 2) {
 												item.removeClass('hide');
 												item.addClass('show');
