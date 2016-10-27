@@ -306,6 +306,7 @@ Y.use('node', function (Y) {
 													});
 													var news = Y.all('ol .blog-item');
 													news.each(function(item){
+														  item.removeClass('hide');
 															item.addClass('show');
 													});
 												break;
@@ -316,6 +317,7 @@ Y.use('node', function (Y) {
 													});
 													var news = Y.all('ol .case-study-item');
 													news.each(function(item){
+														  item.removeClass('hide');
 															item.addClass('show');
 													});
 												break;
@@ -327,6 +329,7 @@ Y.use('node', function (Y) {
 													});
 													var news = Y.all('ol .video-item');
 													news.each(function(item){
+														  item.removeClass('hide');
 															item.addClass('show');
 													});
 												break;
