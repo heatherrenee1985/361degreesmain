@@ -1,3 +1,19 @@
+
+.knowledge-hub-block {
+
+	ol.blog-list, ol.case-study-list, ol.video-list  {
+	.blog-item + .blog-item + .blog-item, .case-study-item + .case-study-item + .case-study-item, .video-item + .video-item + .video-item {
+				display: none;
+		}
+
+		.show.blog-item + .show.blog-item + .show.blog-item, .show.case-study-item + .show.case-study-item + .show.case-study-item, .show.video-item + .show.video-item + .show.video-item {
+				display: inherit;
+		}
+	}
+}
+
+
+
 .knowledge-hub-block, .content-hub-block {
 	margin: 0 auto;
 	padding: 0 0;
@@ -18,13 +34,7 @@
 		/*li.show:nth-of-type(n+7) {
 			display: none;
 		}*/
-		.blog-item + .blog-item + .blog-item, .case-study-item + .case-study-item + .case-study-item, .video-item + .video-item + .video-item {
-				display: none;
-		}
-
-		.show.blog-item + .show.blog-item + .show.blog-item, .show.case-study-item + .show.case-study-item + .show.case-study-item, .show.video-item + .show.video-item + .show.video-item {
-				display: inherit;
-		}
+		
 	}
 
 	h2 {
