@@ -121,18 +121,6 @@ Y.use('node', function (Y) {
 
 			this.showIndexNavOnScroll();
 			this.disableHoverOnScroll();
-
-			var body = Y.one('body');
-			if(body.hasClass('view-item')) {
-				if(body.hasClass('collection-type-blog') || body.hasClass('collection-type-case-study')) {
-					var blogItem = Y.one('.blog-item');
-					if(blogItem) {
-						blogItem.addClass('preview').on('click', function(){
-							blogItem.removeClass('preview')
-						})
-					}
-				}
-			}
 			
 			// GOOGLE MAP IFRAME
 			var map = Y.one('#map');
