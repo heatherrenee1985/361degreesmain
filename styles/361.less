@@ -335,7 +335,7 @@ blockquote::after, .quote-block blockquote::after, .sqs-block-quote  blockquote:
 .col.sqs-col-12.span-12 {
 	position: relative;
 }
-.form-block.sqs-block-form {
+.form-block.sqs-block-form:first-child {
 		position: absolute;
     width: 300px;
     right: 0;
@@ -366,7 +366,7 @@ blockquote::after, .quote-block blockquote::after, .sqs-block-quote  blockquote:
 }
 
 @media (max-width: 768px) { 
-	.form-block.sqs-block-form {
+	.form-block.sqs-block-form:first-child {
 		position: relative;
 		width: inherit;
 		left: 0;
