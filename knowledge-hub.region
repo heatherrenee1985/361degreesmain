@@ -17,8 +17,8 @@
 		</ol>
 	</squarespace:query>
 	
-	<h2><a href="/blog"> Blog Posts </a></h2>
-	<squarespace:query collection="blog" limit="10">
+	<h2><a href="/news"> Blog Posts </a></h2>
+	<squarespace:query collection="news" limit="10">
 		<ol class="blog-list">
 		{.repeated section items}
 			<li class="blog-item" data-categories="{categories}">
