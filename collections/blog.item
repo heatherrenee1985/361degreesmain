@@ -97,7 +97,7 @@
   <div class="knowledge-hub-block">
    <h2><a href="/knowledge-hub/"> Further your knowledge </a></h2>
    <ol class="blog-list case-study-list">
-    <squarespace:query collection="blog" limit="3">
+    <squarespace:query collection="news" limit="3">
       
       {.repeated section items}
         <li class="blog-item">
