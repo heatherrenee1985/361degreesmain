@@ -1,7 +1,7 @@
 <div class="selling-points">
 		<ul class="selling-point-list ">
       {.repeated section items}
-        <li class="selling-point-item sqs-col-4" id="selling-point-{id}" data-item-id="{id}">
+        <li class="selling-point-item sqs-col-6" id="selling-point-{id}" data-item-id="{id}">
          <a href="{fullUrl}">
             <h2><img src="{assetUrl}"></img> {title}</h2>
             
