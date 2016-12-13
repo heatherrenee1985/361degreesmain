@@ -3,3 +3,32 @@
 		{body}
 	</div>
 {.end}
+
+
+  <div class="content-hub-block">
+   <h2><a href="/knowledge-hub/"> Further your knowledge </a></h2>
+   <ol class="blog-list case-study-list">
+    <squarespace:query collection="news" limit="3">
+      
+      {.repeated section items}
+        <li class="blog-item">
+          <a href="{fullUrl}">
+            <h1>{title}</h1>
+            <div class="background" style="background-image:url({assetUrl})"></div>
+          </a>
+        </li>
+      {.end}
+    </squarespace:query>
+  
+    <squarespace:query collection="case-studies" limit="3">
+      {.repeated section items}
+        <li class="case-study-item">
+          <a href="{fullUrl}">
+            <h1>{title}</h1>
+            <div class="background" style="background-image:url({assetUrl})"></div>
+          </a>
+        </li>
+      {.end}
+    </squarespace:query>
+    </ol>
+  </div>

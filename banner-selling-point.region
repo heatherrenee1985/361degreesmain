@@ -6,14 +6,14 @@
         {.main-image?}
           <div class="banner-thumbnail-wrapper" data-content-field="main-image">
             <div class="color-overlay"></div>
-            <figure id="thumbnail" class="loading content-fill"><img {@|image-meta} /></figure>
+            <figure id="thumbnail" class="loading content-fill"><img src="https://static1.squarespace.com/static/570633c662cd94850842a6fa/t/584fe8921b631b5affccfd47/1481631894282/1-IMG_4544.JPG?format=2500w" /></figure>
           </div>
         {.end}
       {.or}
         {.main-image?}
           <div class="banner-thumbnail-wrapper" data-content-field="main-image">
             <div class="color-overlay"></div>
-            <figure id="thumbnail" class="loading content-fill"><img {@|image-meta} /></figure>
+            <figure id="thumbnail" class="loading content-fill"><img src="https://static1.squarespace.com/static/570633c662cd94850842a6fa/t/584fe8921b631b5affccfd47/1481631894282/1-IMG_4544.JPG?format=2500w" /></figure>
             <div class="blog-item-wrapper">
               <div class="title-desc-wrapper">
                 <div class="post-category">{.section categories}{.repeated section @}<a href="{collection.fullUrl}?category={@|url-encode}">{@}</a>{.alternates with}, {.end}{.end}</div>
@@ -39,7 +39,7 @@
           <div class="banner-thumbnail-wrapper{.if description} has-description{.end}" data-content-field="main-image" data-collection-id="{collection.id}" data-edit-main-image="Banner" data-annotation-alignment="bottom left">
             {.section mainImage}
             <div class="color-overlay"></div>
-            <figure id="thumbnail" class="loading content-fill"><img {@|image-meta} /></figure>
+            <figure id="thumbnail" class="loading content-fill"><img src="https://static1.squarespace.com/static/570633c662cd94850842a6fa/t/584fe8921b631b5affccfd47/1481631894282/1-IMG_4544.JPG?format=2500w" /></figure>
             {.end}
             <div class="desc-wrapper" data-collection-id="{id}">
               <h1>{title}</h1>

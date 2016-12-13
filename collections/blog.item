@@ -94,7 +94,7 @@
 {.end}		
 
 {.if pagination}
-  <div class="knowledge-hub-block">
+  <div class="content-hub-block">
    <h2><a href="/knowledge-hub/"> Further your knowledge </a></h2>
    <ol class="blog-list case-study-list">
     <squarespace:query collection="news" limit="3">
