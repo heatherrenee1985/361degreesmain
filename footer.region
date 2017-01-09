@@ -8,18 +8,18 @@
         <div class="pre-footer-inner">
           <squarespace:block-field id="preFooterBlocks" columns="12" label="Pre-Footer Content" />
         </div>
+        <div class="footer-inner">
+          <div class="nav-wrapper back-to-top-nav"><nav><div class="back-to-top"><a href="#header">Back to Top</a></div></nav></div>
+          <squarespace:navigation navigationId="secondaryNav" template="secondary-navigation" />
+          {.if website.location.addressTitle || website.location.addressLine1 || website.location.addressLine2 || website.location.addressCountry}<div id="siteInfo">{.or}{.if websiteSettings.contactPhoneNumber || websiteSettings.contactEmail}<div id="siteInfo">{.end}{.end}{.section website}{.section location}{.if addressTitle || addressLine1 || addressLine2 || addressCountry}<span class="site-address">{.end}{.if addressTitle}{addressTitle}{.end}{.if addressLine1}{.if addressTitle}, {.end}{addressLine1}{.end}{.if addressLine2}{.if addressTitle || addressLine1}, {.or}{.end}{addressLine2}{.end}{.if addressCountry}{.if addressTitle || addressLine1 || addressLine2}, {.end}{addressCountry}{.end}{.if addressTitle || addressLine1 || addressLine2 || addressCountry}</span>{.end}{.end}{.end}{.section websiteSettings}{.if contactPhoneNumber}<span rel="tel" class="site-phone">{contactPhoneNumber}</span>{.end}{.end}{.if website.location.addressTitle || website.location.addressLine1 || website.location.addressLine2 || website.location.addressCountry}</div>{.end}
+          <squarespace:block-field id="footerBlocks" columns="12" label="Footer Content" />
+        </div>
         <div class="iso">
             <img src="/assets/CL-26.png" alt="" data-pin-nopin="true">
             <p>Cert No. 14474</p>
             <p>ISO 9001</p>
             <p>ISO 14001</p>
             <p>OHSAS 18001</p>
-        </div>
-        <div class="footer-inner">
-          <div class="nav-wrapper back-to-top-nav"><nav><div class="back-to-top"><a href="#header">Back to Top</a></div></nav></div>
-          <squarespace:navigation navigationId="secondaryNav" template="secondary-navigation" />
-          {.if website.location.addressTitle || website.location.addressLine1 || website.location.addressLine2 || website.location.addressCountry}<div id="siteInfo">{.or}{.if websiteSettings.contactPhoneNumber || websiteSettings.contactEmail}<div id="siteInfo">{.end}{.end}{.section website}{.section location}{.if addressTitle || addressLine1 || addressLine2 || addressCountry}<span class="site-address">{.end}{.if addressTitle}{addressTitle}{.end}{.if addressLine1}{.if addressTitle}, {.end}{addressLine1}{.end}{.if addressLine2}{.if addressTitle || addressLine1}, {.or}{.end}{addressLine2}{.end}{.if addressCountry}{.if addressTitle || addressLine1 || addressLine2}, {.end}{addressCountry}{.end}{.if addressTitle || addressLine1 || addressLine2 || addressCountry}</span>{.end}{.end}{.end}{.section websiteSettings}{.if contactPhoneNumber}<span rel="tel" class="site-phone">{contactPhoneNumber}</span>{.end}{.end}{.if website.location.addressTitle || website.location.addressLine1 || website.location.addressLine2 || website.location.addressCountry}</div>{.end}
-          <squarespace:block-field id="footerBlocks" columns="12" label="Footer Content" />
         </div>
       </footer>
 
