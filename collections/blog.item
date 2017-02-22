@@ -4,7 +4,7 @@
   <article class="entry h-entry {@|item-classes}{.main-image?} has-main-image{.end} clear" id="article-{id}" data-item-id="{id}">
 
     <header class="entry-header">
-      <div class="meta-above-title">
+      <div class="meta-above-title" style="opacity:0;">
         {.section author}
         <div class="entry-byline">
           <span class="entry-author"><a href="{collection.fullUrl}?author={author.id}" class="p-author author entry-byline-link" rel="author">{displayName}</a></span>
