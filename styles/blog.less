@@ -248,6 +248,14 @@
           max-width: @pageWidthNarrow;
           margin: 0 auto 20px;
           width: ~"calc(33.33% - 20px)";
+
+          @media only screen and (max-width: 1024px) {
+            width: ~"calc(50% - 20px)";
+          }
+
+          @media only screen and (max-width: 1024px) {
+            width: 100%;
+          }
         }
       }
       
