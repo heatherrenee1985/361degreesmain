@@ -1,6 +1,6 @@
 {.section item}
 	<div class="video-title sqs-col-5">
-		<h2>{title}</h2>
+		<h1>{title}</h1>
 		<p>{body}</p>
 	</div>
 	<div class="video-item sqs-col-6">

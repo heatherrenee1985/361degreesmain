@@ -18,7 +18,7 @@
               <div class="title-desc-wrapper">
                 <div class="post-category">{.section categories}{.repeated section @}<a href="{collection.fullUrl}?category={@|url-encode}">{@}</a>{.alternates with}, {.end}{.end}</div>
                 <div class="post-author"><a href="{collection.fullUrl}?author={author.id}">{.section author}{displayName}{.end}</a></div>
-                {.section title}<div class="post-title">{@}</div>{.end}
+                {.section title}<div class="post-title"><h1>{@}</h1></div>{.end}
                 {.section excerpt}<div class="post-summary">{@}</div>{.end}
               </div>
             </div>
