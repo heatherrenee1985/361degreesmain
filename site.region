@@ -1,6 +1,14 @@
 <!doctype html>
 <html class="touch-styles">
   <head>
+    <!-- Google Tag Manager -->
+    <meta name="google-site-verification" content="y1Yc5U94yJIFM4NTdlJUDxrMyql8WhKfrJK1zhLp424" />
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-MV8WD3');</script>
+    <!-- End Google Tag Manager -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     {.if template.mobileStylesEnabled}
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,6 +19,11 @@
   </head>
 
   <body id="{squarespace.page-id}" class="{squarespace.page-classes}{.if item}{.section item}{.if productType}{.or}{.main-image?} has-banner-image item-main-image{.end}{.end}{.end}{.or}{.section collection}{.collectionTypeNameEquals? index}{.section collections}{.section 0}{.main-image?} has-banner-image index-page{.end}{.end}{.end}{.or}{.main-image?} has-banner-image general-page{.end}{.end}{.end}{.end}">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MV8WD3"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    
     <input type="checkbox" name="mobile-nav-toggle" id="mobileNavToggle" class="mobile-nav-toggle-box hidden" /><a href="#" class="body-overlay"></a>
     <div class="sqs-announcement-bar-dropzone"></div>
     <div id="sidecarNav">
