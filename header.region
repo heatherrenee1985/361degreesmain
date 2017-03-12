@@ -14,6 +14,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     {.end}
     {squarespace-headers}
+    {.section item}
+      {.section author}
+       <meta itemprop="author" content="{displayName}" />
+       <div itemprop="publisher" itemscope itemtype="http://schema.org/Corporation">
+          <span itemprop="name">361 Degrees</span>
+        </div>
+       <meta itemprop="datePublished" content="{addedOn|date %B %e, %Y}" />
+       <meta itemprop="headline" content="{title}" />
+       {.if updatedOn}<meta itemprop="dateModified" content="{updatedOn|date %B %e, %Y}" />{.end}
+    {.end}
     <script>/* Must be below squarespace-headers */(function(){var e='ontouchstart'in window||navigator.msMaxTouchPoints;var t=document.documentElement;if(!e&&t){t.className=t.className.replace(/touch-styles/,'')}})()
     </script>
   </head>
