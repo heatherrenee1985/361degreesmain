@@ -6,6 +6,12 @@
     <header class="entry-header">
       <div class="meta-above-title" style="opacity:0;">
       <div itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+        <div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+          <img src="https://www.361degrees.co.uk/assets/logo_green.png"/>
+          <meta itemprop="url" content="https://www.361degrees.co.uk/assets/logo_green.png">
+          <meta itemprop="width" content="232">
+          <meta itemprop="height" content="35">
+        </div>
         <meta itemprop="name" content="361 Degrees" />
       </div>
 
