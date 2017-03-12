@@ -3,7 +3,7 @@
       {.repeated section items}
         <li class="selling-point-item sqs-col-6" id="selling-point-{id}" data-item-id="{id}">
          <a href="{fullUrl}">
-            <h2><img src="{assetUrl}"></img> {title}</h2>
+            <h2><img src="{assetUrl?format=original}"></img> {title}</h2>
             
             {excerpt}
           </a>

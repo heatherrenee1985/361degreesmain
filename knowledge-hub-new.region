@@ -10,7 +10,7 @@
 					<li class="blog-item" data-categories="{categories}">
 						<a href="{fullUrl}">
 							<h1>{title}</h1>
-							<div class="background" style="background-image:url({assetUrl})"></div>
+							<div class="background" style="background-image:url({assetUrl?format=original})"></div>
 						</a>
 					</li>
 				{.end}
@@ -20,7 +20,7 @@
 					<li class="case-study-item" data-categories="{categories}">
 						<a href="{fullUrl}">
 							<h1>{title}</h1>
-							<div class="background" style="background-image:url({assetUrl})"></div>
+							<div class="background" style="background-image:url({assetUrl?format=original})"></div>
 						</a>
 					</li>
 				{.end}
@@ -30,7 +30,7 @@
 					<li class="video-item" data-categories="{categories}">
 						<a href="{fullUrl}">
 							<h1>{title}</h1>
-							<div class="background" style="background-image:url({assetUrl})"></div>
+							<div class="background" style="background-image:url({assetUrl?format=original})"></div>
 						</a>
 					</li>
 				{.end}
