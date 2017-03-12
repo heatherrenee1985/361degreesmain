@@ -17,6 +17,7 @@
     {.section item}
       {.section author}
        <meta itemprop="author" content="{displayName}" />
+       {.end}
        <div itemprop="publisher" itemscope itemtype="http://schema.org/Corporation">
           <span itemprop="name">361 Degrees</span>
         </div>
