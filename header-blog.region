@@ -19,7 +19,7 @@
        <meta itemprop="author" content="{displayName}" />
        {.end}
        <meta itemprop="publisher" itemscope itemtype="http://schema.org/Corporation">
-          <meta itemprop="name" content"361 Degrees" />
+          <meta itemprop="name" content="361 Degrees" />
         </meta>
        <meta itemprop="datePublished" content="{addedOn|date %B %e, %Y}" />
        <meta itemprop="headline" content="{title}" />
