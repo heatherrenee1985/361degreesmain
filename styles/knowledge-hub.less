@@ -86,11 +86,20 @@
 		}
 		> li {
 			display: block;
-			width: 33.33%;
+			width: ~"calc(33.33% - 20px)";
 			height: 12em;
 			overflow: hidden;
 			background: #000;
 			min-height: 300px;
+			margin-bottom: 20px;
+
+			@media only screen and (max-width: 1024px) {
+				width: ~"calc(50% - 20px)";
+			}
+
+			@media only screen and (max-width: 667px) {
+				width: 100%;
+			}
 
 			&.video-item {
 				padding: 0;
@@ -241,7 +250,7 @@
 	.knowledge-hub-block {
 		> ol {
 			> li {
-				width: 50%;
+				width: ~"calc(50% - 20px)";
 			}
 		}
 	}
