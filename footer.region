@@ -25,10 +25,10 @@
 
     </div>
     
-    <squarespace:script src="site.js" combo="true" />
-    <squarespace:script src="helpers.js" combo="true" />
-    <squarespace:script src="sticky.js" combo="true" />
-    <squarespace:script src="fixedBar.js" combo="true" />
+    <squarespace:script src="site.js" combo="false" />
+    <squarespace:script src="helpers.js" combo="false" />
+    <squarespace:script src="sticky.js" combo="false" />
+    <squarespace:script src="fixedBar.js" combo="false" />
     {.if authenticatedAccount}<squarespace:script src="authenticated.js" combo="false" />{.end}
     {squarespace-footers}
 
