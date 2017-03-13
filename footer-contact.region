@@ -3,7 +3,7 @@
 
       <footer id="footer" role="contentinfo">
        <div class="logo">
-        <img src="/assets/logo_green_white_small.png" alt="361 Degrees" data-pin-nopin="true">
+        <img src="/assets/logo_green_white_medium.png" alt="361 Degrees" data-pin-nopin="true">
        </div>
         <div class="pre-footer-inner">
           <squarespace:block-field id="preFooterBlocks" columns="12" label="Pre-Footer Content" />
