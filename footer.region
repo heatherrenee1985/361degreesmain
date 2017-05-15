@@ -1,3 +1,7 @@
+      <div id="scrollToTop" class="anchor-tab">
+          <img src="/assets/scroll_top.png" alt="Scroll to top" data-pin-nopin="true">
+      </div>
+
       <div id="preFooter">
       </div>
 
@@ -24,13 +28,13 @@
       </footer>
 
     </div>
-    
-    <!--<squarespace:script src="site.js" combo="true" />
+
+    <squarespace:script src="site.js" combo="true" />
     <squarespace:script src="helpers.js" combo="true" />
     <squarespace:script src="sticky.js" combo="true" />
-    <squarespace:script src="fixedBar.js" combo="true" />-->
+    <squarespace:script src="fixedBar.js" combo="true" />
 
-    <script type="text/javascript" src="https://static1.squarespace.com/static/ta/570633c662cd94850842a6fa/473/scripts/combo/?site.js&helpers.js&sticky.js&fixedBar.js" async></script>
+    <!--<script type="text/javascript" src="https://static1.squarespace.com/static/ta/570633c662cd94850842a6fa/473/scripts/combo/?site.js&helpers.js&sticky.js&fixedBar.js" async></script>-->
 
     {.if authenticatedAccount}<squarespace:script src="authenticated.js" combo="false" />{.end}
     {squarespace-footers}
