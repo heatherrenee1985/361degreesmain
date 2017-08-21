@@ -5,7 +5,7 @@
 	
 	<div class="featured-list">
 		<ol class="case-study-list blog-list video-list">
-			<squarespace:query collection="news" limit="6" featured="true">	
+			<squarespace:query collection="resources/news" limit="6" featured="true">	
 				{.repeated section items}
 					<li class="blog-item" data-categories="{categories}">
 						<a href="{fullUrl}">
@@ -15,7 +15,7 @@
 					</li>
 				{.end}
 			</squarespace:query>
-			<squarespace:query collection="case-studies" limit="6" featured="true">	
+			<squarespace:query collection="resources/case-studies" limit="6" featured="true">	
 				{.repeated section items}
 					<li class="case-study-item" data-categories="{categories}">
 						<a href="{fullUrl}">
@@ -25,7 +25,7 @@
 					</li>
 				{.end}
 			</squarespace:query>
-			<squarespace:query collection="video" limit="6" category="Featured">	
+			<squarespace:query collection="resources/video" limit="6" category="Featured">	
 				{.repeated section items}
 					<li class="video-item" data-categories="{categories}">
 						<a href="{fullUrl}">
@@ -47,7 +47,7 @@
 		</ul>
 		<div class="blog-listing title-listing selected">
 			<ul class="blog-list">
-				<squarespace:query collection="news" limit="30">
+				<squarespace:query collection="resources/news" limit="30">
 					{.repeated section items}
 					<li data-categories="{categories}">
 						<article class="video-item">
@@ -63,7 +63,7 @@
 		</div>
 		<div class="case-study-listing title-listing">
 			<ul class="case-study-list">
-			<squarespace:query collection="case-studies" limit="30">
+			<squarespace:query collection="resources/case-studies" limit="30">
 				{.repeated section items}
 					<li data-categories="{categories}">
 						<article class="video-item">
@@ -79,7 +79,7 @@
 		</div>
 		<div class="video-listing title-listing">
 			<ul class="video-list">
-			<squarespace:query collection="video" limit="30">
+			<squarespace:query collection="resources/video" limit="30">
 				{.repeated section items}
 					<li data-categories="{categories}">
 						<article class="video-item">
