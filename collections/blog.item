@@ -107,7 +107,7 @@
   <div class="content-hub-block">
    <h2><a href="/knowledge-hub/"> Further your knowledge </a></h2>
    <ol class="blog-list case-study-list">
-    <squarespace:query collection="news" limit="3">
+    <squarespace:query collection="resources/news" limit="3">
       
       {.repeated section items}
         <li class="blog-item">
@@ -119,7 +119,7 @@
       {.end}
     </squarespace:query>
   
-    <squarespace:query collection="case-studies" limit="3">
+    <squarespace:query collection="resources/case-studies" limit="3">
       {.repeated section items}
         <li class="case-study-item">
           <a href="{fullUrl}">
