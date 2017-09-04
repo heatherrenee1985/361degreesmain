@@ -1,0 +1,40 @@
+<main id="page" role="main">
+  {.section collection}
+  {.collectionTypeNameEquals? products}{.section categories}<div id="categoryNav">
+    <input type="checkbox" name="category-nav-toggle" id="categoryNavToggle" class="category-nav-toggle hidden" />
+    <label for="categoryNavToggle" class="category-nav-toggle-label" onclick></label>
+    <nav class="category-nav">
+      <ul class="category-nav-links">
+        <li class="nav-section-label">{navigationTitle}</li>
+        <li class="filter"><a>Filter{.if categoryFilter}: {categoryFilter}{.end}</a></li>
+        <li{.if categoryFilter}{.or} class="active-link all"{.end}><a href="{fullUrl}">All</a></li>
+        {.repeated section @}
+        <li{.equal? categoryFilter @} class="active-link"{.end}><a href="{fullUrl}?category={@|url-encode}">{@}</a></li>
+        {.end}
+      </ul>
+    </nav>
+  </div>{.end}{.end}<!-- comment the linebreak between these two elements because science
+  -->{.collectionTypeNameEquals? page}<!-- comment the linebreak between these two elements because science
+  --><squarespace:folder-navigation template="folder-navigation" />{.end}{.end}<!-- comment the linebreak between these two elements because science
+  --><div id="content" class="main-content" data-content-field="main-content" data-collection-id="{collection.id}" {.equal? collection.typeName "gallery"}{.or}{.equal? collection.typeName "index"}{.or}data-edit-main-image="Banner"{.end}{.end}>
+    {squarespace.main-content}
+  </div><!-- comment the linebreak between these two elements because science
+  -->{.section collection}{.collectionTypeNameEquals? blog}<aside id="rightSidebar" role="complementary">
+    <squarespace:block-field class="open-block-field" id="blogBlocks-{id}" columns="12" label="Blog Sidebar Content" />
+  </aside>
+  {.end}
+  {.end}
+</main>
+<div id="related_content">
+  <squarespace:block-field id="relatedBlock" columns="12" label="Related Content" />
+</div>
+<div id="new_block">
+    <squarespace:block-field id="extraBlock1" columns="4" label="Block 1" />
+    <squarespace:block-field id="extraBlock2" columns="4" label="Block 2" />
+    <squarespace:block-field id="extraBlock3" columns="4" label="Block 3" />
+</div>
+<div class="full-form contact-form-cta green">
+  <a name="contact"></a> 
+  <h2 style="padding-top: 50px;">Find out more</h2>
+  <a class="btn" href="/contact-form">Get in touch</a>
+</div>
