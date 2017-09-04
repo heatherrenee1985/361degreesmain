@@ -36,7 +36,8 @@
     <input type="checkbox" name="mobile-nav-toggle" id="mobileNavToggle" class="mobile-nav-toggle-box hidden" /><a href="#" class="body-overlay"></a>
     <div class="sqs-announcement-bar-dropzone"></div>
     <div id="sidecarNav">
-      <squarespace:navigation navigationId="mainNav" template="mobile-navigation" />
+      <squarespace:navigation navigationId="leftMainNav" template="mobile-navigation" />
+      <squarespace:navigation navigationId="rightMainNav" template="mobile-navigation" />
     </div>
     <div id="siteWrapper" class="clearfix">
 
@@ -44,7 +45,7 @@
       <div id="sticky-anchor"></div>
       <header id="header" role="banner">
         <div class="header-inner">
-          <div id="headerNav"><squarespace:navigation navigationId="rightMainNav" template="navigation" /></div>
+          <div id="headerNav" class="headerNavNew"><squarespace:navigation navigationId="leftMainNav" template="navigation" /></div>
           {.section website}<div id="{.if logoImageUrl}logoWrapper{.or}siteTitleWrapper{.end}" class="wrapper" data-content-field="site-title">
             {.section logoImageUrl}
               <h3 id="logoImage"><a href="/"><img src="{logoImageUrl}?format=1500w" alt="{siteTitle}" /></a></h3>
