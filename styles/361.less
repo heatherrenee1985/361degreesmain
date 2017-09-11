@@ -517,17 +517,24 @@ blockquote::after, .quote-block blockquote::after, .sqs-block-quote  blockquote:
 				opacity: 1;
 			}
 		}
-		.summary-content,
-		.summary-metadata-item,
-		.summary-title a,
-		.summary-read-more-link:after {
-			color: white;
+
+		.summary-item {
+			.summary-content,
+			.summary-metadata-item,
+			.summary-title a,
+			.summary-read-more-link:after {
+				color: white;
+			}
 
 			&:hover {
-				color: @color361;
+				.summary-content,
+				.summary-metadata-item,
+				.summary-title a,
+				.summary-read-more-link:after {
+					color: @color361;
+				}
 			}
 		}
-
 
 	}
 
