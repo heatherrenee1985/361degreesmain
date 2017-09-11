@@ -508,8 +508,14 @@ blockquote::after, .quote-block blockquote::after, .sqs-block-quote  blockquote:
 	}
 
 	&.summary-block-setting-design-autogrid {
+		max-width: 1350px;
+		margin: 0 auto;
 		.summary-content {
 			width: 100%;
+
+			.summary-title {
+				opacity: 1;
+			}
 		}
 	}
 
@@ -525,7 +531,8 @@ blockquote::after, .quote-block blockquote::after, .sqs-block-quote  blockquote:
 		flex-direction: column;
 		//width:  ~"calc(100% - 18px)";
 		width: 94%;
-    padding: 0 20px;
+		padding: 0 20px;
+
 		.summary-title {
 			font-size: 24px;
 			font-weight: 100;
