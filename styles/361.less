@@ -755,7 +755,7 @@ body.homepage.collection-type-page.has-promoted-gallery.transparent-header {
 			content: '';
 			height: 5px;
 			width: 30%;
-			border-bottom: 5px solid #c1d72e;
+			border-bottom: 5px solid @color361;
 			position: absolute;
 			bottom: -15px;
 			left: 35%;
@@ -764,6 +764,27 @@ body.homepage.collection-type-page.has-promoted-gallery.transparent-header {
 
 	p {
 		text-align: center;
+	}
+
+	.first {
+		&:before {
+			content: '';
+			height: 5px;
+			width: 20%;
+			border-top: 5px solid @color361;
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+		&:after {
+			content: '';
+			height: 5px;
+			width: 20%;
+			border-top: 5px solid @color361;
+			position: absolute;
+			top: 0;
+			right: 0;
+		}
 	}
 
 }
