@@ -738,6 +738,8 @@ body.homepage.collection-type-page.has-promoted-gallery.transparent-header {
 	margin: 50px align-self;
 	border-left: 5px solid @color361;
 	border-right: 5px solid @color361;
+	padding: 20px;
+
 
 	h1 {
 		text-align: center;
@@ -748,6 +750,16 @@ body.homepage.collection-type-page.has-promoted-gallery.transparent-header {
 		position: relative;
 		text-transform: uppercase;
 		letter-spacing: 2px;
+
+		&:after {
+			content: '';
+			height: 5px;
+			width: 30%;
+			border-bottom: 5px solid #c1d72e;
+			position: absolute;
+			bottom: -15px;
+			left: 35%;
+		}
 	}
 
 	p {
