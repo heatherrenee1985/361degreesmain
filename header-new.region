@@ -36,8 +36,7 @@
     <input type="checkbox" name="mobile-nav-toggle" id="mobileNavToggle" class="mobile-nav-toggle-box hidden" /><a href="#" class="body-overlay"></a>
     <div class="sqs-announcement-bar-dropzone"></div>
     <div id="sidecarNav">
-      <squarespace:navigation navigationId="leftMainNav" template="mobile-navigation" />
-      <squarespace:navigation navigationId="rightMainNav" template="mobile-navigation" />
+      <squarespace:navigation navigationId="mainNav" template="mobile-navigation" />
     </div>
     <div id="siteWrapper" class="clearfix">
 
