@@ -1,0 +1,20 @@
+<div class="content-hub-block">	
+		<ol class="blog-list">
+      {.repeated section items}
+        <li class="blog-item" id="article-{id}" data-item-id="{id}">
+          <a href="{fullUrl}">
+            <h1>{title}</h1>
+            <div class="background" style="background-image:url({assetUrl})"></div>
+          </a>
+          {.if postItemInjectCode}<div class="entry-injection">{postItemInjectCode}</div>{.end}
+        </li>
+      {.end}
+		</ol>
+    
+    {.if pagination}
+    <nav class="pagination clear" data-paginate="scroll">
+      <div class="newer">{.if pagination.prevPage}<a href="{pagination.prevPageUrl}" rel="prev"><span class="prev-label">Newer Posts</span></a>{.end}</div><!-- comment the linebreak between these two elements because science
+          --><div class="older">{.if pagination.nextPage}<a href="{pagination.nextPageUrl}" rel="next"><span class="next-label">Older Posts</span></a>{.end}</div>
+    </nav>
+    {.end}
+</div>
