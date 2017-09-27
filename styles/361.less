@@ -452,17 +452,17 @@ blockquote::after, .quote-block blockquote::after, .sqs-block-quote  blockquote:
 
 .contact-info-wrapper {
 	.display-flex();
-	.flex-direction(row);
+	.flex-direction(column-reverse);
 }
 .contact-form-new {
-	.form-block.sqs-block-form:first-child {
-
-	}
+	width: 300px;
+  margin: auto;
 	.spacer-block {
 		display: none;
 	}
 	.form-wrapper {
-		padding: 40px;
+		padding-top: 20px;
+		padding-bottom: 20px;
 	}
 }
 .form-block.sqs-block-form:first-child {
@@ -1009,14 +1009,6 @@ body.homepage {
 	overflow: hidden;
 	min-height: 200px;
 	width: 100%;
-	&.new-map {
-		width: 50%;
-		height: 540px;
-		iframe{
-			width: 100% !important;
-		}
-	}
-
 	iframe {
 		position: absolute;
 		top: 0;
@@ -1132,4 +1124,38 @@ div.contact-form-cta {
     display: block;
     margin-top: 10%;
   }
+}
+
+@media screen and(min-width: 768px){
+	.contact-form-new {
+		width: 500px;
+		margin: auto;
+	}
+}
+
+@media screen and(min-width: 1024px){
+	.contact-info-wrapper {
+		.display-flex();
+		.flex-direction(row);
+	}
+	.contact-form-new {
+		width: 50%;
+		.spacer-block {
+			display: none;
+		}
+		.form-wrapper {
+			padding: 20px;
+			padding-left: 70px;
+			padding-right: 70px;
+		}
+	}
+	.jumbotron.map {
+		&.new-map {
+			width: 50%;
+			height: 540px;
+			iframe{
+				width: 100% !important;
+			}
+		}
+	}
 }
