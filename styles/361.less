@@ -449,6 +449,11 @@ blockquote::after, .quote-block blockquote::after, .sqs-block-quote  blockquote:
 .col.sqs-col-12.span-12 {
 	position: relative;
 }
+.contact-form {
+	.form-block.sqs-block-form:first-child {
+		width: 50%;
+	}
+}
 .form-block.sqs-block-form:first-child {
 		position: absolute;
     width: 300px;
@@ -994,19 +999,24 @@ body.homepage {
 	overflow: hidden;
 	min-height: 200px;
 	width: 100%;
+	&.new-map {
+		iframe{
+			width: 50% !important;
+		}
+	}
 
 	iframe {
 		position: absolute;
 		top: 0;
 		left: 0;
-		width: 50% !important;
+		width: 100% !important;
 		height: 100% !important;
 	}
-
 	&.scrolloff iframe{
 		pointer-events: none;
 	}
 }
+
 
 div.contact-form-cta {
 	margin-bottom: 75px;
