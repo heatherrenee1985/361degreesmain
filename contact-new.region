@@ -3,14 +3,17 @@
   <div class="color-overlay dark"></div>
   <figure id="thumbnail" class="loading content-fill"><img src="/assets/contact2.jpg" alt="361 - Contact us" title="361 - Contact us" /></figure>
   <div class="desc-wrapper contact-page">
-    <h1>Contact us</h1>
+		{.section collection}
+			<h1>{title}</h1>
+			<p>{description}</p>
+		{.end}
     <p>
-      <a href="tel:00448452221361"> <span class="glyphicon glyphicon-earphone"></span> 0845 2221 361</a>
-      <a class="link" href="/contact-form">projects@361degrees.co.uk</a>
+      <a href="tel:00448452221361"> <span class="glyphicon glyphicon-earphone"></span>Call 0845 2221 361</a>
+      <a id="to-contact-form" class="link" href="#contact-form">Or use the form</a>
     </p>
   </div>
 </div>
-<div>
-  <div id="map" class="jumbotron map scrolloff new-map"><iframe width="50%" height="600" style="border: 0;" id="contact-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2461.8665900385577!2d-0.4619897999999999!3d51.899898700000016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487649243be41f19%3A0xc26410074d99ca69!2s361+Degrees!5e0!3m2!1sen!2suk!4v1442231618978" frameborder="0" allowfullscreen="allowfullscreen"></iframe></div>
-  <div class="contact-form" style="width:50%; height:600px">{squarespace.main-content}</div>
+<div class="contact-info-wrapper">
+  <div id="map" class="jumbotron map scrolloff new-map"><iframe width="100%" height="600" style="border: 0;" id="contact-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2461.8665900385577!2d-0.4619897999999999!3d51.899898700000016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487649243be41f19%3A0xc26410074d99ca69!2s361+Degrees!5e0!3m2!1sen!2suk!4v1442231618978" frameborder="0" allowfullscreen="allowfullscreen"></iframe></div>
+  <div id="contact-form" class="contact-form-new" style="width:50%; height:100%">{squarespace.main-content}</div>
 </div>

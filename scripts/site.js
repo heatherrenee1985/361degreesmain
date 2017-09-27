@@ -60,8 +60,6 @@ Y.use('node', function (Y) {
 					}
 				});
 			}
-
-
 		},
 
 		bindUI: function () {
@@ -91,7 +89,6 @@ Y.use('node', function (Y) {
 					subnav.addClass('right');
 				}
 			});
-
 			// disabled to fix [TMP-3640]
 			// look into fixing when possible -aparks
 			// helper.scrollAnchors('#siteWrapper a[href^="#"], #siteWrapper a[href^="/#"]');
