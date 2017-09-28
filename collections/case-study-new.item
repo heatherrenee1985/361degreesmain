@@ -10,6 +10,11 @@
 				<div class="item four">{customContent.infoBoxFour.html}</div>
 			</div>
 		</div>
-		{body}	
+		{body}
+		<div class="extended-info-wrapper">
+			<div class="item one">{customContent.inDephtInfoOne.html}</div>
+			<div class="item two">{customContent.inDephtInfoTwo.html}</div>
+			<div class="item three">{customContent.inDephtInfoThree.html}</div>
+		</div>	
 	</div>
 {.end}
