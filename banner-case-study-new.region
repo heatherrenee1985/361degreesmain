@@ -11,7 +11,7 @@
         {.end}
       {.or}
         {.main-image?}
-          <div class="banner-thumbnail-wrapper" data-content-field="main-image">
+          <div class="banner-thumbnail-wrapper new" data-content-field="main-image">
             <div class="color-overlay"></div>
             <figure id="thumbnail" class="loading content-fill"><img {@|image-meta} /></figure>
             <div class="blog-item-wrapper">
