@@ -1,10 +1,14 @@
 {.section item}
-	<div class="case-study-item">
+	<div class="case-study-item new">
 		<div class="info-box">
-			<div class="item one">{customContent.infoBoxOne.html}</div>
-			<div class="item two">{customContent.infoBoxTwo.html}</div>
-			<div class="item three">{customContent.infoBoxThree.html}</div>
-			<div class="item four">{customContent.infoBoxFour.html}</div>
+			<div class="info-item-wrapper">
+				<div class="item one">{customContent.infoBoxOne.html}</div>
+				<div class="item two">{customContent.infoBoxTwo.html}</div>
+			</div>
+			<div class="info-item-wrapper">
+				<div class="item three">{customContent.infoBoxThree.html}</div>
+				<div class="item four">{customContent.infoBoxFour.html}</div>
+			</div>
 		</div>
 		{body}	
 	</div>

@@ -777,8 +777,6 @@ body.homepage.collection-type-page.has-promoted-gallery.transparent-header {
 	padding: 20px 20px 40px;
 	position: relative;
 	background-color: #fafafa;
-
-
 	h1 {
 		text-align: center;
 		font-family: "omnes-pro";
@@ -1088,7 +1086,7 @@ div.contact-form-cta {
 			color: #fff;
 			padding: 10px;
     	-webkit-box-sizing: border-box;
-    	        box-sizing: border-box;
+    	  box-sizing: border-box;
 		}
 	}
 }
@@ -1123,10 +1121,77 @@ div.contact-form-cta {
   }
 }
 
+.case-study-item {
+	&.new {
+		margin-top: 50px;
+		.info-box {
+			.display-flex();
+			.flex-direction(row);
+			.flex-wrap(wrap);
+			.justify-content(space-around);
+			position: relative;
+			padding-left: 10px;
+			padding-right: 10px;
+			padding-bottom: 5px;
+			padding-top: 5px;
+			border: 5px solid @color361;
+			width: 300px;
+			margin: auto;
+			p {
+				font-size: 13px;
+			}
+			&:before {
+				content: '';
+				position: absolute;
+				top: -5px;
+				width: 200px;
+				height: 5px;
+				background-color: white;
+				right: ~"calc(50% - 100px)";
+			}
+			&:after {
+				content: '';
+				position: absolute;
+				bottom: -5px;
+				width: 200px;
+				height: 5px;
+				background-color: white;
+				right: ~"calc(50% - 100px)";
+			}
+			.item {
+				&.one, &.three{
+					margin-right: 10px;
+				}
+			}
+		}
+	}
+}
+
 @media screen and(min-width: 768px){
 	.contact-form-new {
 		width: 500px;
 		margin: auto;
+	}
+	.case-study-item {
+		&.new {
+			margin-top: 50px;
+			.info-box {
+				width: 400px;
+				margin: auto;
+				p {
+					font-size: 18px;
+				}
+				&:before {
+					top: -5px;
+					width: 350px;
+					right: ~"calc(50% - 175px)";
+				}
+				&:after {
+					width: 350px;
+					right: ~"calc(50% - 175px)";
+				}
+			}
+		}
 	}
 }
 
@@ -1152,6 +1217,18 @@ div.contact-form-cta {
 			height: 540px;
 			iframe{
 				width: 100% !important;
+			}
+		}
+	}
+	.banner-thumbnail-wrapper {
+		&.new {
+			.post-title {
+				max-width: 1000px;
+				margin: auto;
+			}
+			.post-summary {
+				max-width: 900px;
+				margin: auto;
 			}
 		}
 	}
