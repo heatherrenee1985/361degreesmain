@@ -463,6 +463,30 @@ blockquote::after, .quote-block blockquote::after, .sqs-block-quote  blockquote:
 	.form-wrapper {
 		padding-top: 40px;
 		padding-bottom: 40px;
+		.field-element {
+			padding: 10px !important;
+		}
+		.title {
+			font-size: 16px;
+		}
+		input[type=submit] {
+			font-weight: 500;
+			line-height: .8em;
+			font-size: 16px;
+		}
+		input[type=text] {
+			-webkit-transition: 0.5s;
+				transition: 0.5s;
+			&:focus {
+				border: 1px solid @color361;
+				outline: none;
+			}
+		}
+	}
+	.form-button-wrapper {
+		.button.sqs-system-button.sqs-editable-button {
+			background: @color361 !important;
+		}
 	}
 }
 .form-block.sqs-block-form:first-child {
@@ -1098,7 +1122,6 @@ div.contact-form-cta {
   border-radius: 5px;
   width: 50px;
   height: 50px;
-  background-color: rgba(255,255,255,.8);
   z-index: 111111;
   border: 3px solid @color361;
   opacity: 0;
@@ -1281,7 +1304,7 @@ div.contact-form-cta {
 	.jumbotron.map {
 		&.new-map {
 			width: 50%;
-			height: 540px;
+			height: 460px;
 			iframe{
 				width: 100% !important;
 			}
