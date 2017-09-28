@@ -1,5 +1,11 @@
 {.section item}
 	<div class="case-study-item">
-		{body}
+		<div class="info-box">
+			<div class="item one">{customContent.infoBoxOne.html}</div>
+			<div class="item two">{customContent.infoBoxTwo.html}</div>
+			<div class="item three">{customContent.infoBoxThree.html}</div>
+			<div class="item four">{customContent.infoBoxFour.html}</div>
+		</div>
+		{body}	
 	</div>
 {.end}
