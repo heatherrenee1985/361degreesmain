@@ -1168,6 +1168,7 @@ div.contact-form-cta {
 }
 .extended-info-wrapper {
 	margin-top: 70px;
+	margin-bottom: 70px;
 	.display-flex();
 	.flex-direction(row);
 	max-width: 1100px;
@@ -1182,6 +1183,36 @@ div.contact-form-cta {
 			border-bottom: 5px solid @color361;
 			padding-bottom: 7px;
 			text-transform: uppercase;
+		}
+	}
+}
+.case-quote-wrapper {
+	max-width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 80px;
+	p {
+		font-style: italic;
+		line-height: 45px;
+		text-align: center;
+		border-left-width: 10px;
+		font-weight: 500;
+		font-size: 20px;
+		&:before {
+			color: @color361;
+			content: "\201C";
+			font-size: 4em;
+			line-height: 0.1em;
+			margin-right: 0.25em;
+			vertical-align: -0.3em;
+		}
+		&:after {
+			color: @color361;
+			content: "\201D";
+			font-size: 4em;
+			line-height: 0.1em;
+			margin-left: 0.25em;
+			vertical-align: -0.5em;
 		}
 	}
 }
