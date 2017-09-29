@@ -20,5 +20,11 @@
 			{customContent.customQuote.html}	
 		</div>	
 	</div>
+	<div class="contact-form-cta full-form green">
+    <!--<h2 style="padding-top: 50px;"><a href="/knowledge-hub/">be our next success story</a></h2>-->
+    <a class="btn" href="/new-contact-us">Get in touch</a>
+	</div>
+	<h2 class="featured-cs">Other Case Studies</h2>
+	
 {.end}
 
