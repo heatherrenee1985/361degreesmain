@@ -31,13 +31,19 @@
     <a class="btn" href="/new-contact-us">Get in touch</a>
 	</div>
 {.end}
-<squarespace:query collection="new-case-study-new" limit="3">
-  <div class="featured-wrapper new-case-study">
-    {.repeated section items}
-    <div class="featured-post">
-      {.main-image?}<img {@|image-meta} />{.end}
-      <h2>{title}</h2>
-    </div>
-    {.end}
-  </div>
+<squarespace:block-field id="featured-case-studies" columns="12"/>
+
+<squarespace:query collection="{.section collection}{urlId}{.end}" limit="3">
+		<div class="featured-wrapper new-case-study">
+			{.repeated section items}
+			<a href="{url}">
+				<div class="featured-post">
+					{.main-image?}<img {@|image-meta} />{.end}
+					<div class="title-wrapper">
+						<h2>{title}</h2>
+					</div>
+				</div>
+			</a>
+			{.end}
+		</div>
 </squarespace:query>

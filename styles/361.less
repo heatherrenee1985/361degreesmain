@@ -1253,9 +1253,41 @@ div.contact-form-cta {
 			width: 300px;
     	height: 300px;
 			position: relative;
-			h2 {
+			margin-left: 5px;
+    	margin-right: 5px;
+			&:after {
+				content: "";
+				background-color: rgba(0, 0, 0, .5);
+				height: 300px;
+				width: 300px;
 				position: absolute;
 				top: 0;
+			}
+			&:hover {
+				h2 {
+					color: @color361;
+					padding-bottom: 0.5em;
+				}
+			}
+			.title-wrapper {
+				position: absolute;
+				z-index: 1;
+				top: 0;
+				height: 300px;
+				.display-flex;
+				.flex-direction(column);
+				.justify-content(center);
+			}
+			h2 {
+				padding-left: 12px;
+				padding-right: 12px;
+				font-size: 24px;
+				font-weight: 100;
+				color: white;
+				text-align: center;
+				margin: 0;
+				-webkit-transition: ease all .6s;
+					transition: ease all .6s;
 			}
 			img {
 				width: 300px;
