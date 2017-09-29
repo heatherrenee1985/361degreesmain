@@ -1143,7 +1143,50 @@ div.contact-form-cta {
     margin-top: 10%;
   }
 }
-
+.service-page {
+	ul:first-of-type {
+		.display-flex();
+		.flex-direction(row);
+		.flex-wrap(wrap);
+		.justify-content(space-between);
+		margin-top: 50px !important;
+		margin-bottom: 50px !important;
+		position: relative;
+		padding-left: 10px;
+		padding-right: 10px;
+		padding-bottom: 10px;
+		padding-top: 10px;
+		border: 5px solid @color361;
+		background-color: #fafafa;
+		width: 300px;
+		margin: auto;
+		list-style: none;
+		li {
+			width: 100%;
+			text-align: center;
+			padding-top: 7px;
+			padding-bottom: 7px;
+		}
+		&:before {
+			content: '';
+			position: absolute;
+			top: -5px;
+			width: 200px;
+			height: 5px;
+			background-color: #fafafa;
+			right: ~"calc(50% - 100px)";
+		}
+		&:after {
+			content: '';
+			position: absolute;
+			bottom: -5px;
+			width: 200px;
+			height: 5px;
+			background-color: #fafafa;
+			right: ~"calc(50% - 100px)";
+		}
+	}
+}
 .case-study-item {
 	&.new {
 		margin-top: 50px;
