@@ -1188,7 +1188,7 @@ div.contact-form-cta {
 	}
 	h3 {
 		border-bottom: 0 !important;
-		color: rgba(26, 26, 26, .7) !important;
+		//color: rgba(26, 26, 26, .7) !important;
 		&:first-letter {
 			color: @color361;
 			font-size: 35px;
@@ -1444,19 +1444,19 @@ div.contact-form-cta {
 			.display-flex();
 			.align-items(flex-end);
 			.justify-content(flex-end);
-			padding: 50px 0;
+			padding: 50px 0 !important;
 
 
-			.blog-item-wrapper {
+			.blog-item-wrapper, .desc-wrapper {
 				bottom: -50px !important;
 				top: auto !important;
 				.display-flex();
-				.flex-direction(row);
+				.flex-direction(column);
 				.align-items(flex-end);
 				.justify-content(flex-end);
 				width: 100% !important;
 
-				.post-title h1 {
+				.post-title h1, h1 {
 					display: block !important;
 					font-size: 34px !important;
 					font-weight: 500 !important;
@@ -1467,11 +1467,13 @@ div.contact-form-cta {
 					text-align: right;
 				}
 
-				.post-summary p {
+				.post-summary p, p {
 					text-align: right;
 					font-size: 20px !important;
 					font-weight: 400 !important;
 					max-width: 600px;
+					margin-left: 0;
+					margin-right: 0;
 				}
 
 			}
