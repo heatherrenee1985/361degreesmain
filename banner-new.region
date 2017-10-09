@@ -1,0 +1,56 @@
+{.if item}
+  {.section item}
+    {.if productType}
+    {.or}
+      {.if startDate}
+        {.main-image?}
+          <div class="banner-thumbnail-wrapper" data-content-field="main-image">
+            <div class="color-overlay"></div>
+            <figure id="thumbnail" class="loading content-fill"><img {@|image-meta} /></figure>
+          </div>
+        {.end}
+      {.or}
+        {.main-image?}
+          <div class="banner-thumbnail-wrapper new" data-content-field="main-image">
+            <div class="color-overlay"></div>
+            <figure id="thumbnail" class="loading content-fill"><img {@|image-meta} /></figure>
+            <div class="blog-item-wrapper">
+              <div class="title-desc-wrapper">
+                <div class="post-category">{.section categories}{.repeated section @}<a href="{collection.fullUrl}?category={@|url-encode}">{@}</a>{.alternates with}, {.end}{.end}</div>
+                <div class="post-author"><a href="{collection.fullUrl}?author={author.id}">{.section author}{displayName}{.end}</a></div>
+                {.section title}<div class="post-title">{@}</div>{.end}
+                {.section excerpt}<div class="post-summary">{@}</div>{.end}
+              </div>
+            </div>
+          </div>
+        {.end}
+      {.end}
+    {.end}
+  {.end}
+{.or}
+  {.section collection}
+    {.collectionTypeNameEquals? gallery}
+    {.or}
+      {.collectionTypeNameEquals? index}
+      {.or}
+        {.collectionTypeNameEquals? page}
+          <div id="promotedGalleryWrapper" class="sqs-layout promoted-gallery-wrapper"><div class="row"><div class="col"></div></div></div>
+          {.main-image?}
+          <div class="banner-thumbnail-wrapper{.if description} has-description{.end} new" data-content-field="main-image" data-collection-id="{collection.id}" data-edit-main-image="Banner" data-annotation-alignment="bottom left">
+            {.section mainImage}
+            <div class="color-overlay"></div>
+            <figure id="thumbnail" class="loading content-fill"><img {@|image-meta} /></figure>
+            {.end}
+            <div class="desc-wrapper" data-collection-id="{id}">
+              <h1>{title}</h1>
+              {.if description}
+                {description}
+              {.end}
+            </div>
+          </div>
+          {.end}
+        {.end}
+      {.end}
+    {.end}
+  {.end}
+{.end}
