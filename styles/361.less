@@ -892,11 +892,11 @@ body.homepage {
 	}
 }
 
-// FOOTER {
+// FOOTER
+
 #footer {
 	background-color: #383533 !important;
 	clear: both;
-
 	.logo {
 		padding-top: 50px;
 		text-align: center;
@@ -919,7 +919,7 @@ body.homepage {
 		}
 
 		img {
-				max-width: 150px;
+			max-width: 150px;
 		}
 
 		p {
@@ -939,6 +939,68 @@ body.homepage {
 		padding: 0;
 		.socialaccountlinks-v2-block {
 			padding-top: 0 !important;
+		}
+	}
+	&.new-footer {
+		.display-flex();
+		.flex-direction(row);
+		.flex-wrap(wrap);
+		padding-left: 30px;
+		padding-right: 30px;
+		.left-wrapper {
+			width: 50%;
+		}
+		.right-wrapper {
+			width: 50%;
+			min-height: 310px;
+		}
+		.site-info-wrapper {
+			.flex-grow(1);
+			font-size: 12px;
+			.sqs-block {
+				padding-top: 0 !important;
+			}
+			#footerBlocks {
+				margin-top: 0;
+			}
+		}
+		.logo {
+			img {
+				width: 100%;
+				max-width: 300px;
+			}
+		}
+		#siteInfo {
+			font-size: 12px;
+		}
+		#secondaryNavigation {
+			.display-flex();
+			.flex-direction(row);
+			.flex-wrap(wrap);
+			.justify-content(space-around);
+			margin: auto;
+			div {
+				&.external,
+				&.folder {
+					text-align: left;
+					padding-right: 15px;
+				}
+				a {
+					padding-left: 0;
+					padding-right: 0;
+				}
+				label {
+					padding-left: 0;
+					padding-right: 0;
+				}
+				&.subnav {
+					padding-left: 10px;
+					padding-right: 10px;
+				}
+			}
+		}
+		.footer-inner {
+			padding-top: 50px;
 		}
 	}
 }
