@@ -86,8 +86,7 @@ body {
 }
 
 .has-promoted-gallery.collection-layout-homepage-new #promotedGalleryWrapper .color-overlay {
-
-    background-color: rgba(0,0,0,.3);
+  background-color: rgba(0,0,0,.3);
 }
 
 .has-promoted-gallery.collection-layout-homepage-new #promotedGalleryWrapper,
@@ -112,8 +111,21 @@ body {
 	    -ms-flex-pack: end;
 	      justify-content: flex-end;
 	  width: 100% !important;
+		}
 	}
 }
+.collection-layout-homepage-new {
+	.summary-item-list {
+		.display-flex();
+		.flex-direction(row);
+		.flex-wrap(wrap);
+		.justify-content(center);
+	}
+	.summary-item {
+		width: 49% !important;
+		margin-left: .5% !important;
+		margin-right: .5% !important;
+	}
 }
 
 // OVERRIDE CLIENT LOGOS ISSUES
@@ -993,6 +1005,11 @@ body.homepage {
 		#siteInfo {
 			font-size: 10px;
 			margin: auto;
+			.display-flex();
+			.flex-direction(column);
+			.site-phone, .site-email {
+				font-weight: bold;
+			}
 		}
 		.iso {
 			p {
@@ -1496,6 +1513,13 @@ div.contact-form-cta {
 			.flex-basis(0);
 			padding-left: 20px;
 			padding-right: 20px;
+		}
+	}
+	.collection-layout-homepage-new {
+		.summary-item {
+			width: 23% !important;
+			margin-left: .5% !important;
+			margin-right: .5% !important;
 		}
 	}
 }
