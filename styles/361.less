@@ -115,7 +115,8 @@ body {
 	}
 }
 .collection-layout-homepage-new {
-	.summary-item-list {
+	#block-86b4b9e94dfcd2447935 {
+		.summary-item-list {
 		.display-flex();
 		.flex-direction(row);
 		.flex-wrap(wrap);
@@ -125,14 +126,24 @@ body {
 		width: 49% !important;
 		margin-left: .5% !important;
 		margin-right: .5% !important;
+		.summary-title {
+			font-size: 18px !important;
+		}
+	}
 	}
 }
 
 // OVERRIDE CLIENT LOGOS ISSUES
-#block-yui_3_17_2_1_1460456234362_55577.gallery-block {
+#block-83b42a3f3e6e6b9a626e.gallery-block {
+	.sqs-wrapper {
+		.display-flex();
+		.flex-direction(row);
+		.align-items(center);
+	}
   img {
-    max-width: 300px;
-    height: auto;
+    max-width: 300px !important;
+		height: auto !important;
+		vertical-align: middle !important;
   }
 }
 
@@ -1516,10 +1527,15 @@ div.contact-form-cta {
 		}
 	}
 	.collection-layout-homepage-new {
-		.summary-item {
-			width: 23% !important;
-			margin-left: .5% !important;
-			margin-right: .5% !important;
+		#block-86b4b9e94dfcd2447935 {
+			.summary-item {
+				width: 23% !important;
+				margin-left: .5% !important;
+				margin-right: .5% !important;
+				.summary-title {
+					font-size: 24px !important;
+				}
+			}
 		}
 	}
 }
