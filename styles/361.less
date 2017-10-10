@@ -987,12 +987,12 @@ body.homepage {
 		.flex-wrap(wrap);
 		padding-left: 30px;
 		padding-right: 30px;
-		.left-wrapper {
-			width: 50%;
-		}
-		.right-wrapper {
-			width: 50%;
-			min-height: 310px;
+		.footer-nav-wrapper {
+			width: 100%;
+			padding-bottom: 50px;
+			.footer-inner {
+				max-width: 800px;
+			}
 		}
 		.site-info-wrapper {
 			.flex-grow(1);
@@ -1029,14 +1029,14 @@ body.homepage {
 		}
 		#secondaryNavigation {
 			.display-flex();
-			.flex-direction(row);
+			.flex-direction(column);
 			.flex-wrap(wrap);
 			.justify-content(space-around);
 			margin: auto;
 			div {
 				&.external,
 				&.folder {
-					text-align: left;
+					text-align: center;
 					padding-right: 15px;
 				}
 				a {
@@ -1537,6 +1537,12 @@ div.contact-form-cta {
 				}
 			}
 		}
+	}
+	#secondaryNavigation {
+		.display-flex();
+		.flex-direction(row) !important;
+		.flex-wrap(wrap);
+		.justify-content(space-around);
 	}
 }
 
