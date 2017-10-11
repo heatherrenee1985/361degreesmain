@@ -1274,7 +1274,7 @@ div.contact-form-cta {
 		padding-top: 10px;
 		border: 5px solid @color361;
 		background-color: #fafafa;
-		width: 300px;
+		max-width: 300px;
 		margin: auto;
 		list-style: none;
 		li {
@@ -1319,6 +1319,23 @@ div.contact-form-cta {
 			color: rgba(26, 26, 26, .7) !important;
 		}
 	}
+	.summary-item-list {
+		&.sqs-gallery {
+			.display-flex();
+			.flex-direction(row);
+			.justify-content(center);
+			.flex-wrap(wrap);
+			max-width: 1250px;
+		}
+		.summary-item {
+			width: 48% !important;
+			margin-right: 1% !important;
+			margin-left: 1% !important;
+			.summary-title {
+				font-size: 12px;
+			}
+		}
+	}
 }
 .case-study-item {
 	&.new {
@@ -1338,7 +1355,7 @@ div.contact-form-cta {
 			padding-top: 5px;
 			border: 5px solid @color361;
 			background-color: #fafafa;
-			width: 300px;
+			max-width: 300px;
 			margin: auto;
 			p {
 				font-size: 13px;
@@ -1485,6 +1502,11 @@ div.contact-form-cta {
 	}
 }
 @media screen and(min-width: 768px){
+	.desc-wrapper {
+		h1 {
+			font-size: 48px;
+		}
+	}
 	.contact-form-new {
 		width: 500px;
 		margin: auto;
@@ -1553,6 +1575,24 @@ div.contact-form-cta {
 		.flex-direction(row) !important;
 		.flex-wrap(wrap);
 		.justify-content(space-around);
+	}
+	.service-page {
+		.summary-item-list {
+			&.sqs-gallery {
+				.display-flex();
+				.flex-direction(row);
+				.justify-content(center);
+				max-width: 1250px;
+			}
+			.summary-item {
+				width: 23% !important;
+				margin-right: 0.5% !important;
+				margin-left: 0.5% !important;
+				.summary-title {
+					font-size: 24px;
+				}
+			}
+		}
 	}
 }
 
