@@ -780,9 +780,23 @@ blockquote::after, .quote-block blockquote::after, .sqs-block-quote  blockquote:
 	}
 }
 
+body.collection-layout-homepage-new.banner-button-corner-style-pill .desc-wrapper p:last-child>a, body:not(.collection-type-gallery).banner-button-corner-style-pill.has-promoted-gallery #promotedGalleryWrapper .sqs-gallery-block-slideshow .meta-description p:last-child>a, body:not(.collection-type-gallery).banner-button-corner-style-pill.has-promoted-gallery .promoted-gallery-wrapper .sqs-gallery-block-slideshow .meta-description p:last-child>a {
+	border: 2px solid @color361;
+	background-color: transparent !important;
+	position: absolute;
+	top: -60px;
+	right: 88px;
+
+	&:hover {
+		background-color: @color361 !important;
+	}
+}
+
 body:not(.collection-type-gallery).banner-button-corner-style-pill .desc-wrapper p:last-child>a, body:not(.collection-type-gallery).banner-button-corner-style-pill.has-promoted-gallery #promotedGalleryWrapper .sqs-gallery-block-slideshow .meta-description p:last-child>a, body:not(.collection-type-gallery).banner-button-corner-style-pill.has-promoted-gallery .promoted-gallery-wrapper .sqs-gallery-block-slideshow .meta-description p:last-child>a {
 	border: 2px solid @color361;
 	background-color: transparent !important;
+	position: absolute;
+
 	&:hover {
 		background-color: @color361 !important;
 	}
@@ -1325,7 +1339,7 @@ div.contact-form-cta {
 		//color: rgba(26, 26, 26, .7) !important;
 		&:first-letter {
 			color: @color361;
-			
+
 		}
 	}
 	h3 + p {
