@@ -22,8 +22,8 @@
        <meta itemprop="headline" content="{title}" />
        {.if updatedOn}<meta itemprop="dateModified" content="{updatedOn|date %B %e, %Y}" />{.end}
     {.end}
-    <script>/* Must be below squarespace-headers */(function(){var e='ontouchstart'in window||navigator.msMaxTouchPoints;var t=document.documentElement;if(!e&&t){t.className=t.className.replace(/touch-styles/,'')}})()
-    </script>
+		<script>/* Must be below squarespace-headers */(function(){var e='ontouchstart'in window||navigator.msMaxTouchPoints;var t=document.documentElement;if(!e&&t){t.className=t.className.replace(/touch-styles/,'')}})()</script>
+		<script src="//code.jquery.com/jquery-2.2.1.min.js"></script>
   </head>
 
   <body id="{squarespace.page-id}" class="{squarespace.page-classes}{.if item}{.section item}{.if productType}{.or}{.main-image?} has-banner-image item-main-image{.end}{.end}{.end}{.or}{.section collection}{.collectionTypeNameEquals? index}{.section collections}{.section 0}{.main-image?} has-banner-image index-page{.end}{.end}{.end}{.or}{.main-image?} has-banner-image general-page{.end}{.end}{.end}{.end}">
@@ -44,6 +44,7 @@
       <div id="sticky-anchor"></div>
       <header id="header" role="banner">
         <div class="header-inner">
+          <div id="headerNav" class="headerNavNew"><squarespace:navigation navigationId="leftMainNav" template="navigation" /></div>
           {.section website}<div id="{.if logoImageUrl}logoWrapper{.or}siteTitleWrapper{.end}" class="wrapper" data-content-field="site-title">
             {.section logoImageUrl}
               <h3 id="logoImage"><a href="/"><img src="{logoImageUrl}?format=1500w" alt="{siteTitle}" /></a></h3>
@@ -52,6 +53,7 @@
             {.end}
           </div>{.end}<!-- comment the linebreak between these two elements because science
           --><label for="mobileNavToggle" class="mobile-nav-toggle-label"><div class="top-bar"></div><div class="middle-bar"></div><div class="bottom-bar"></div></label><label for="mobileNavToggle" class="mobile-nav-toggle-label fixed-nav-toggle-label"><div class="top-bar"></div><div class="middle-bar"></div><div class="bottom-bar"></div></label><!-- comment the linebreak between these two elements because science
-          --><div id="headerNav"><squarespace:navigation navigationId="mainNav" template="navigation" /></div>
+          <div id="headerNav"><squarespace:navigation navigationId="mainNav" template="navigation" /></div>-->
+          <div id="headerNav"><squarespace:navigation navigationId="rightMainNav" template="navigation" /></div>
         </div>
       </header>
