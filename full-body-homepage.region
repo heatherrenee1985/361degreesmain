@@ -27,7 +27,7 @@
 </main>
 <div class="contact-form-cta full-form green">
 	<h2>Find Out More</h2>
-	<a class="btn" href="/new-contact-us">Get in touch</a>
+	<a class="btn" href="/contact">Get in touch</a>
 </div>
 <div id="related_content">
   <squarespace:block-field id="relatedBlock" columns="12" label="Related Content" />
