@@ -1807,7 +1807,19 @@ div.contact-form-cta {
 .cd-section > div > div.overlay {
 	height: 100%;
 	width: 100%;
-	background-color: rgba(0,0,0,.6);
+	background-color: rgba(0,0,0,.3);
+	.display-flex();
+	.flex-direction(column);
+	.align-items(center);
+	.justify-content(center);
+}
+
+.cd-section div.overlay h2 {
+	color: @color361;
+}
+
+.cd-section div.overlay p {
+	color: white;
 }
 
 .cd-section:first-of-type > div {
