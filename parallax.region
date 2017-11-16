@@ -25,6 +25,19 @@
     {.end}
 		<script>/* Must be below squarespace-headers */(function(){var e='ontouchstart'in window||navigator.msMaxTouchPoints;var t=document.documentElement;if(!e&&t){t.className=t.className.replace(/touch-styles/,'')}})()</script>
 		<squarespace:script src="modernizr.js" combo="false" />
+		<style>
+			body::before {
+				/* never visible - this is used in jQuery to check the current MQ */
+				content: 'mobile';
+				display: none;
+			}
+			@media only screen and (min-width: 1050px) {
+				body::before {
+					/* never visible - this is used in jQuery to check the current MQ */
+					content: 'desktop';
+				}
+			}
+		</style>
 	</head>
 
   <body id="{squarespace.page-id}" class="{squarespace.page-classes}" data-hijacking="on" data-animation="parallax">
