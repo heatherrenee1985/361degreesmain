@@ -99,9 +99,9 @@
 	</ul>
 </nav> <!-- .cd-vertical-nav -->
 
-	<squarespace:script src="/parallax/velocity.min.js" combo="true" />
-	<squarespace:script src="/parallax/velocity.ui.min.js" combo="true" />
-	<squarespace:script src="/parallax/main.js" combo="true" />
+	<squarespace:script src="velocity.min.js" combo="true" />
+	<squarespace:script src="velocity.ui.min.js" combo="true" />
+	<squarespace:script src="parallax.js" combo="true" />
 	{.if authenticatedAccount}<squarespace:script src="authenticated.js" combo="false" />{.end}
 	{squarespace-footers}
 
