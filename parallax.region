@@ -74,34 +74,44 @@
 
 <section class="cd-section visible">
 	<div>
-		<h2>The Right Conditions</h2>
-		<p>Our environment affects everything we do. Every decision, every action, every day. Under the right conditions we are creative and productive. Happy. Under the wrong conditions we hesitate and we make mistakes.</p>
-		<p>The fresh air, natural light and relaxed atmosphere of the great outdoors energises us, pushes us to be better and to do great things. But we’ve created indoor environments that stifle that energy and creativity.</p>
+		<div class="overlay">
+			<h2>The Right Conditions</h2>
+			<p>Our environment affects everything we do. Every decision, every action, every day. Under the right conditions we are creative and productive. Happy. Under the wrong conditions we hesitate and we make mistakes.</p>
+			<p>The fresh air, natural light and relaxed atmosphere of the great outdoors energises us, pushes us to be better and to do great things. But we’ve created indoor environments that stifle that energy and creativity.</p>
+		</div>
 	</div>
 </section>
 
 <section class="cd-section">
 	<div>
-		<h2>A Better Way</h2>
-		<p>At 361 Consulting, we believe in a better way. We believe building services should support creative decisions and productive actions, every minute of every day. Better working environments that energise and push people to be better, because that’s the path to success for every business.</p>
+		<div class="overlay">
+			<h2>A Better Way</h2>
+			<p>At 361 Consulting, we believe in a better way. We believe building services should support creative decisions and productive actions, every minute of every day. Better working environments that energise and push people to be better, because that’s the path to success for every business.</p>
+		</div>
 	</div>
 </section>
 <section class="cd-section">
 	<div>
-		<h2>New Title needed?</h2>
-		<p>Creating the right conditions is not easy, but the rewards speak for themselves. Better air quality and thermal comfort can improve productivity by up to 10%. They prevent absenteeism and reduce mistakes by 44%. Quality building services, with systems designed specifically for your people, are not a luxury investment. To truly set your business apart, they’re a necessity.</p>
+		<div class="overlay">
+			<h2>New Title needed?</h2>
+			<p>Creating the right conditions is not easy, but the rewards speak for themselves. Better air quality and thermal comfort can improve productivity by up to 10%. They prevent absenteeism and reduce mistakes by 44%. Quality building services, with systems designed specifically for your people, are not a luxury investment. To truly set your business apart, they’re a necessity.</p>
+		</div>
 	</div>
 </section>
 <section class="cd-section">
 	<div>
-		<h2>No Shortcuts</h2>
-		<p>If you believe people excel under the right conditions, we believe we can help you succeed. No shortcuts, no templates, no unrealistic promises. Just experienced consultants who understand energy efficiency, cooling loads, occupant comfort levels and everything else we need to design the perfect environment for the people who occupy your building. Better conditions, happier occupants, bigger profits.</p>
+		<div class="overlay">
+			<h2>No Shortcuts</h2>
+			<p>If you believe people excel under the right conditions, we believe we can help you succeed. No shortcuts, no templates, no unrealistic promises. Just experienced consultants who understand energy efficiency, cooling loads, occupant comfort levels and everything else we need to design the perfect environment for the people who occupy your building. Better conditions, happier occupants, bigger profits.</p>
+		</div>
 	</div>
 </section>
 <section class="cd-section">
 	<div>
-		<h2>Get In Touch</h2>
-		<p>Link</p>
+		<div class="overlay">
+			<h2>Get In Touch</h2>
+			<p>Link</p>
+		</div>
 	</div>
 </section>
 
