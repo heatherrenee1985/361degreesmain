@@ -31,6 +31,9 @@
 				content: 'mobile';
 				display: none;
 			}
+			header {
+				background-color: transparent;
+			}
 			@media only screen and (min-width: 1050px) {
 				body::before {
 					/* never visible - this is used in jQuery to check the current MQ */
