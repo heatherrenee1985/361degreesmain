@@ -24,7 +24,8 @@
        {.if updatedOn}<meta itemprop="dateModified" content="{updatedOn|date %B %e, %Y}" />{.end}
     {.end}
 		<script>/* Must be below squarespace-headers */(function(){var e='ontouchstart'in window||navigator.msMaxTouchPoints;var t=document.documentElement;if(!e&&t){t.className=t.className.replace(/touch-styles/,'')}})()</script>
-  </head>
+		<squarespace:script src="modernizr.js" combo="false" />
+	</head>
 
   <body id="{squarespace.page-id}" class="{squarespace.page-classes}" data-hijacking="on" data-animation="parallax">
     <!-- Google Tag Manager (noscript) -->
