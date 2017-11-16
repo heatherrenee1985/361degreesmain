@@ -98,6 +98,7 @@
 	</ul>
 </nav> <!-- .cd-vertical-nav -->
 
+	<squarespace:script src="jquery-2.1.4.js" combo="false" />
 	<squarespace:script src="velocity.min.js" combo="false" />
 	<squarespace:script src="velocity.ui.min.js" combo="false" />
 	<squarespace:script src="parallax.js" combo="false" />
