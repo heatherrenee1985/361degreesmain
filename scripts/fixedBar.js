@@ -19,6 +19,9 @@
             var videoItem = Y.one('.collection-type-video.view-item');
 			if(!videoItem) {
 				Y.one('#logoImage img').setAttribute('src', '/assets/logo_white.png');
+				if (window.location.pathname.indexOf('contact-consulting') != -1) {
+					Y.one('#logoImage img').setAttribute('src', '/assets/logo_consulting.png');
+				}
 			}
 
         }
