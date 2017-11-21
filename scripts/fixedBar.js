@@ -10,7 +10,10 @@
      Y.on('scroll', function() {
         if (anchorY < window.scrollY) {
             Y.one('#header').addClass('sticky');
-            Y.one('#logoImage img').setAttribute('src', '/assets/logo_green.png');
+						Y.one('#logoImage img').setAttribute('src', '/assets/logo_green.png');
+						if (window.location.pathname.indexOf('contact-consulting') != -1) {
+							Y.one('#logoImage img').setAttribute('src', '/assets/logo_consulting.png');
+						}
         } else {
             Y.one('#header').removeClass('sticky');
             var videoItem = Y.one('.collection-type-video.view-item');
