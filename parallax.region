@@ -116,7 +116,7 @@
 	<div>
 		<div class="overlay">
 			<h2>Get In Touch</h2>
-			<p>Whether you’re ready to get started or just want to discuss the possibilities for your building, 361 Consulting can help. Click below to get in touch.</p>
+			<p style="text-align: center;">Whether you’re ready to get started or just want to discuss the possibilities for your building, 361 Consulting can help. Click below to get in touch.</p>
 			<a href="/contact-consulting">Contact Us</a>
 			<squarespace:block-field id="preFooterBlocks" columns="12" label="Pre-Footer Content" />
 
