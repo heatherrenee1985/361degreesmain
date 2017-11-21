@@ -1810,7 +1810,7 @@ div.contact-form-cta {
 
 	> a {
 		border: 2px solid @colorOrange;
-		background: transparent;
+		background-color: transparent;
 		font-family: "proxima-nova";
     font-size: 15px;
     text-transform: uppercase;
@@ -1821,6 +1821,11 @@ div.contact-form-cta {
 		padding: 1em 1.75em;
 		color: white;
 		border-radius: 300px;
+		transition: all 0.3s ease-out;
+
+		&:hover {
+			background-color: @colorOrange;
+		}
 	}
 }
 
