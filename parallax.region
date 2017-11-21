@@ -34,6 +34,11 @@
 			header {
 				background-color: transparent !important;
 			}
+			@media only screen and (max-width: 776px) {
+				header {
+					position: fixed;
+				}
+			}
 			@media only screen and (min-width: 1050px) {
 				body::before {
 					/* never visible - this is used in jQuery to check the current MQ */
