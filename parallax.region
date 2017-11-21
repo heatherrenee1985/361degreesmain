@@ -94,7 +94,7 @@
 <section class="cd-section">
 	<div>
 		<div class="overlay">
-			<h2>New Title needed?</h2>
+			<h2>Rewarding Investment</h2>
 			<p>Creating the right conditions is not easy, but the rewards speak for themselves. Better air quality and thermal comfort can improve productivity by up to 10%. They prevent absenteeism and reduce mistakes by 44%. Quality building services, with systems designed specifically for your people, are not a luxury investment. To truly set your business apart, they’re a necessity.</p>
 		</div>
 	</div>
@@ -111,7 +111,9 @@
 	<div>
 		<div class="overlay">
 			<h2>Get In Touch</h2>
-			<p>Link</p>
+			<div class="pre-footer-inner">
+				<squarespace:block-field id="preFooterBlocks" columns="12" label="Pre-Footer Content" />
+			</div>
 		</div>
 	</div>
 </section>
