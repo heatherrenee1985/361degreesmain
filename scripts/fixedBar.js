@@ -12,7 +12,7 @@
             Y.one('#header').addClass('sticky');
 						Y.one('#logoImage img').setAttribute('src', '/assets/logo_green.png');
 						if (window.location.pathname.indexOf('contact-consulting') != -1) {
-							Y.one('#logoImage img').setAttribute('src', '/assets/logo_consulting.png');
+							Y.one('#logoImage img').setAttribute('src', '/assets/logo_consulting_grey.png');
 						}
         } else {
             Y.one('#header').removeClass('sticky');
