@@ -111,9 +111,9 @@
 	<div>
 		<div class="overlay">
 			<h2>Get In Touch</h2>
-			<div class="pre-footer-inner">
-				<squarespace:block-field id="preFooterBlocks" columns="12" label="Pre-Footer Content" />
-			</div>
+			<a href="/contact-consulting">Contact Us</a>
+			<squarespace:block-field id="preFooterBlocks" columns="12" label="Pre-Footer Content" />
+
 		</div>
 	</div>
 </section>
