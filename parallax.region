@@ -60,6 +60,7 @@
       <div id="sticky-anchor"></div>
       <header id="header" role="banner">
         <div class="header-inner">
+          <div id="headerNav" class="headerNavNew"></div>
           {.section website}<div id="{.if logoImageUrl}logoWrapper{.or}siteTitleWrapper{.end}" class="wrapper" data-content-field="site-title">
             {.section logoImageUrl}
               <h3 id="logoImage"><a href="/"><img src="{logoImageUrl}?format=1500w" alt="{siteTitle}" /></a></h3>
@@ -67,6 +68,7 @@
               <h3 id="siteTitle" class="site-title"><a href="/">{siteTitle}</a></h3>
             {.end}
           </div>{.end}
+          <div id="headerNav"></div>
         </div>
       </header>
 
