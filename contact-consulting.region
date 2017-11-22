@@ -22,3 +22,21 @@
     <div id="contact-form" class="contact-form-new">{squarespace.main-content}</div>
   </div>
 
+
+
+    </div>
+
+		<squarespace:script src="site.js" combo="true" />
+		<squarespace:script src="new-site.js" combo="true" />
+    <squarespace:script src="helpers.js" combo="true" />
+    <squarespace:script src="sticky.js" combo="true" />
+    <squarespace:script src="fixedBar.js" combo="true" />
+
+    <!--<script type="text/javascript" src="https://static1.squarespace.com/static/ta/570633c662cd94850842a6fa/473/scripts/combo/?site.js&helpers.js&sticky.js&fixedBar.js" async></script>-->
+
+    {.if authenticatedAccount}<squarespace:script src="authenticated.js" combo="false" />{.end}
+    {squarespace-footers}
+
+  </body>
+</html>
+
