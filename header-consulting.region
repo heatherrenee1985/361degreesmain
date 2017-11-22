@@ -47,7 +47,7 @@
           <div id="headerNav" class="headerNavNew"></div>
           {.section website}<div id="{.if logoImageUrl}logoWrapper{.or}siteTitleWrapper{.end}" class="wrapper" data-content-field="site-title">
             {.section logoImageUrl}
-              <h3 id="logoImage"><a href="/"><img src="/assets/logo_consulting.png?format=1500w" alt="{siteTitle}" /></a></h3>
+              <h3 id="logoImage"><img src="/assets/logo_consulting.png?format=1500w" alt="{siteTitle}" /></h3>
             {.or}
               <h3 id="siteTitle" class="site-title"><a href="/">{siteTitle}</a></h3>
             {.end}
