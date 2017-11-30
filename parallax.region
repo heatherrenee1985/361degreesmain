@@ -2,6 +2,7 @@
 <!doctype html>
 <html class="touch-styles">
   <head>
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
   <!-- Google Tag Manager -->
   <meta name="google-site-verification" content="y1Yc5U94yJIFM4NTdlJUDxrMyql8WhKfrJK1zhLp424" />
   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
