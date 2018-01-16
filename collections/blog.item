@@ -93,22 +93,22 @@
     <div class="older">{.if pagination.nextItem}<span class="next-label">Older Post</span><a href="{pagination.nextItem.fullUrl}" rel="next"><span>{pagination.nextItem.title}</span></a>{.end}</div>
   </nav>
   {.end} -->
-  
+
 </div>
 
 {.if item}
   <div class="contact-form-cta full-form green">
     <!--<h2 style="padding-top: 50px;"><a href="/knowledge-hub/">be our next success story</a></h2>-->
-    <a class="btn" href="/contact-form">Get in touch</a>
+    <a class="btn" href="/contact">Get in touch</a>
   </div>
-{.end}		
+{.end}
 
 {.if pagination}
   <div class="content-hub-block">
    <h2><a href="/knowledge-hub/"> Further your knowledge </a></h2>
    <ol class="blog-list case-study-list">
     <squarespace:query collection="resources/news" limit="3">
-      
+
       {.repeated section items}
         <li class="blog-item">
           <a href="{fullUrl}">
@@ -118,7 +118,7 @@
         </li>
       {.end}
     </squarespace:query>
-  
+
     <squarespace:query collection="resources/case-studies" limit="3">
       {.repeated section items}
         <li class="case-study-item">

@@ -46,7 +46,7 @@
               {.if description}
                 {description}
               {.end}
-              <p><a class="btn" href="/contact-form">Get in touch</a></p>
+              <p><a class="btn" href="/contact">Get in touch</a></p>
             </div>
           </div>
           {.end}
